@@ -1,0 +1,3 @@
+pylint setup.py xlutil \
+    test*.py
+

@@ -1,2 +1,10 @@
 py/xlutil_py/CHANGES
 
+v0.0.2
+    2017-03-06
+        * add config files, pylint, coverage                        SLOC  304
+v0.0.1
+    2017-03-06
+        * initial commit
+
+
