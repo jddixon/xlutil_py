@@ -2,7 +2,7 @@
 project:xlutil_py
 package:xlutil
 mainlang:py
-version:0.0.1
+version:0.0.2
 versionDate:2017-03-06
 :?dirs?:
 dir:std:ghpDoc
@@ -39,4 +39,4 @@ bash:std:doPyLint
 bash:std:checkCoverage
 bash:std:bkp2u
 py:std:setup.py
-py:test:test_basics.py
+py:test:test_pop_count.py
