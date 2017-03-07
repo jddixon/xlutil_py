@@ -7,18 +7,21 @@ Giaje1YAJPNVBt3dlOA5lhBp4GpSYBskJ9UR2Zyt3lgAGK3dEwxYETLMh9VWEV8i
 k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END RSA PUBLIC KEY-----
-xlutil_py v0.0.2
-2017-03-06 23:56:39
+xlutil_py v0.1.0
+2017-03-07 21:26:05
 # BEGIN CONTENT #
 xlutil_py
  .dvcz
+  builds 517e3a1e1213a2b7e6bb0787410435c5fb22ef96
   copyright 03efbf5a1d4c1f2a8e01f434653fab4f20777238
+  lastBuildList 896c86ba1088506214ef7b409b4f9f7be72f58c1
   license 5977a55c75bb4612004451a56b0b4c22d9d3311d
-  projCfg 285ade3e4ba986ca26cf7cfb9aefcc95da9b94b9
+  projCfg 980e3a44fbc212bef1e6a37b44e653b408c9b999
   projCfg.local c3059019a5ebe5fb771b14debabce04a4bad02ed
-  version 4819be08e5763003b05bb3c7b91380af3fce41c7
- .gitignore b2cc5fa149056ba0a01449dcdb19409728483a5c
- CHANGES 8cfe63985c4a2656fdafa007fc7ce0e0cfc4616a
+  version 0c2e6d78e653e0485e2c15755bffca857ddab629
+ .gitignore a29a464d1f999a8323f7cafe43fe2587b321f818
+ .gitignore.local 701e71ad917b19e7f6b7fd4bdc542180e9d977a7
+ CHANGES 7e19bfccad0f92003abbb946564e892845a39762
  LICENSE-MIT.md 22d1a7acfe925d189280793d86aa9b1dc542daab
  README.md 57dc0ed5ae3749d1fbab20e20cb74131b779b892
  TODO 71ab9d7cc8cce892664a886ac62789eb932cc543
@@ -27,6 +30,7 @@ xlutil_py
  countem b849f32024776cabe01affc82358932b2ea41df9
  dist
   xlutil_py-0.0.2.tar.gz f36ba6f305e7d6adc51dee9566c2c721974e2d15
+  xlutil_py-0.1.0.tar.gz 9555f432db4a987310d5379ee53367aaae928610
  doPyLint a93e4b6f53e760979759ca7d9b39b6d1c4885724
  ghpDoc
   index.md 77fdd612bb51ef5c0095da174bd13b55c8649f3f
@@ -34,10 +38,10 @@ xlutil_py
  pylintrc dd234fda24a547a9071f1e4608a3c1f3b7de9aa0
  setup.py 66c06a9521ca3de91025839deec68172e7bf7c40
  styleit ed5d5a5dde21c5c18035aba6035582023b2628cc
- test.all aa5413e715112245fe89c56fedda5a678ca67b1e
- test_basics.py 8c694f380358e5f4a936849e0f57784bd1491d83
+ test.all b8a6bea8b32654ba01068ed0d8528cc7dc620c2f
+ test_pop_count.py 9a9d16b20d93cb6e9fab13528cf53bd129be3e60
  xlutil
-  __init__.py afca3ac332ae62021230eadae7312935d91e877e
+  __init__.py 39116a0aa06b39b954b84e4112ae318375abd87f
 # END CONTENT #
 
-ViRNFpRRFeir6wU2MT19DUEGGQ4ZIqgoc1vjJiD7xsVU8UzmTXC1k28Bz76TPsLuchojq3WBvUXLT7JyZokDsXqjzGEuxOY99KJj9UtmZlkripqncLy4wkkqpxER7KAyPAlZgOA2FXJUwSS/FYOYL7VUcxof6ekMlp4fxTt+9RGMJOW+n+oFd7RUbMz5MbQOmku6qOX4aAEwhmfl8dufiFxf2QUniK9gMCejVcHwvvpKMzKLohoO13q/te//5uMW/rgzIxLj5BXSTbPq+8X/4OY20rEgWYvZrjIZbR9oHowKvp7566I/+IHUo08gpENgoDP5CxONJGHxJWlylWyvng==
+fQum2pALwKahTR01VzgMOpLyAF58PbZkPnKbpOpBs8gOccV4vgxNs2/yRi59TfXhi37cVr927H3bw22gwNWZneUgriFEvtXCe8eTHunlGWflq6KUwA+8FXuBLm0Rb1Bl2qx1SJI8pDphbD/Jfg/PVGQnYqkVJZ+cOcYjiocOTdfpk4uq/N5u+7pwarI63HUX4BIw9pGTyrKPZNNxSKEbOBCOJ6SkTPLs+W7lINHPe4xkXd7DTY2cFOn8qsCcMFX+60rtIaNOn7UrTHhcd1jkFCQ76qr7yMcIfhdCNRBvQC61h2qQ21BQCMwvpuqoFSNs4yTgjslrA2o8EY89aAIdxg==
