@@ -1,2 +1,6 @@
 py/xlutil_py/TODO
 
+2017-03-07
+    * write C version of popcount{32,64} 
+    * benchmark against the other implementations
+

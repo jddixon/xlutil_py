@@ -2,8 +2,8 @@
 
 """ Util library for python XLattice packages. """
 
-__version__ = '0.1.0'
-__version_date__ = '2017-03-07'
+__version__ = '0.1.1'
+__version_date__ = '2017-03-08'
 
 __all__ = ['__version__', '__version_date__',
            'popcount32', 'popcount64', 'dump_byte_slice',
@@ -37,14 +37,14 @@ HEXI_FS = 0x0f0f0f0f0f0f0f0f
 
 
 def popcount32(n):  # uint32 -> uint
-    n %= 0x100000000    # convert to uint32
+    # n %= 0x100000000    # convert to uint32
     n = n - ((n >> 1) & OCTO_FIVES)
     n = (n & OCTO_THREES) + ((n >> 2) & OCTO_THREES)
     return (0xffffffff & (((n + (n >> 4)) & OCTO_FS) * OCTO_ONES)) >> 24
 
 
 def popcount64(n):  # uint32 -> uint
-    n %= 0x10000000000000000    # convert to uint64
+    # n %= 0x10000000000000000    # convert to uint64
     n = n - ((n >> 1) & HEXI_FIVES)
     n = (n & HEXI_THREES) + ((n >> 2) & HEXI_THREES)
     return (0xffffffffffffffff & (((n + (n >> 4)) & HEXI_FS) * HEXI_ONES)) >> 56
