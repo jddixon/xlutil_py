@@ -7,30 +7,31 @@ Giaje1YAJPNVBt3dlOA5lhBp4GpSYBskJ9UR2Zyt3lgAGK3dEwxYETLMh9VWEV8i
 k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END RSA PUBLIC KEY-----
-xlutil_py v0.1.0
-2017-03-07 21:26:05
+xlutil_py v0.1.1
+2017-03-08 20:06:29
 # BEGIN CONTENT #
 xlutil_py
  .dvcz
-  builds 517e3a1e1213a2b7e6bb0787410435c5fb22ef96
+  builds f5c08e44a4d07dbbbbd0b7b18ae20df1893dfc9e
   copyright 03efbf5a1d4c1f2a8e01f434653fab4f20777238
-  lastBuildList 896c86ba1088506214ef7b409b4f9f7be72f58c1
+  lastBuildList 10b85264ebd0cdfdf55c5178bc9577af7736a323
   license 5977a55c75bb4612004451a56b0b4c22d9d3311d
   projCfg 980e3a44fbc212bef1e6a37b44e653b408c9b999
   projCfg.local c3059019a5ebe5fb771b14debabce04a4bad02ed
-  version 0c2e6d78e653e0485e2c15755bffca857ddab629
+  version 2a214c88b83a73f5fa66df1bc81cfb60cb86080a
  .gitignore a29a464d1f999a8323f7cafe43fe2587b321f818
  .gitignore.local 701e71ad917b19e7f6b7fd4bdc542180e9d977a7
- CHANGES 7e19bfccad0f92003abbb946564e892845a39762
+ CHANGES 1ca0414c426b7ac9b4b46536ca83cafa054b8368
  LICENSE-MIT.md 22d1a7acfe925d189280793d86aa9b1dc542daab
  README.md 57dc0ed5ae3749d1fbab20e20cb74131b779b892
- TODO 71ab9d7cc8cce892664a886ac62789eb932cc543
+ TODO 865f1c16a2224a547a79dda1fe7dae783e1aa4c8
  bkp2U 17abb2c0400ac7102d376ba25c03aa842ef04025
  checkCoverage 092512357f009c7e15e329aee8f85b925d5b670e
  countem b849f32024776cabe01affc82358932b2ea41df9
  dist
   xlutil_py-0.0.2.tar.gz f36ba6f305e7d6adc51dee9566c2c721974e2d15
   xlutil_py-0.1.0.tar.gz 9555f432db4a987310d5379ee53367aaae928610
+  xlutil_py-0.1.1.tar.gz 89e02e560c525a3cf761546222270a5642147c4a
  doPyLint a93e4b6f53e760979759ca7d9b39b6d1c4885724
  ghpDoc
   index.md 77fdd612bb51ef5c0095da174bd13b55c8649f3f
@@ -39,9 +40,9 @@ xlutil_py
  setup.py 66c06a9521ca3de91025839deec68172e7bf7c40
  styleit ed5d5a5dde21c5c18035aba6035582023b2628cc
  test.all b8a6bea8b32654ba01068ed0d8528cc7dc620c2f
- test_pop_count.py 9a9d16b20d93cb6e9fab13528cf53bd129be3e60
+ test_pop_count.py b3333bd3ba7d218a755892a25e95972a4de10a0e
  xlutil
-  __init__.py 39116a0aa06b39b954b84e4112ae318375abd87f
+  __init__.py 4aecd9f5805aacccaa1ad40ee427346a39eb19c4
 # END CONTENT #
 
-fQum2pALwKahTR01VzgMOpLyAF58PbZkPnKbpOpBs8gOccV4vgxNs2/yRi59TfXhi37cVr927H3bw22gwNWZneUgriFEvtXCe8eTHunlGWflq6KUwA+8FXuBLm0Rb1Bl2qx1SJI8pDphbD/Jfg/PVGQnYqkVJZ+cOcYjiocOTdfpk4uq/N5u+7pwarI63HUX4BIw9pGTyrKPZNNxSKEbOBCOJ6SkTPLs+W7lINHPe4xkXd7DTY2cFOn8qsCcMFX+60rtIaNOn7UrTHhcd1jkFCQ76qr7yMcIfhdCNRBvQC61h2qQ21BQCMwvpuqoFSNs4yTgjslrA2o8EY89aAIdxg==
+YkQUC6T5ORjFCBqiZUl57gZ0yXTR/4oxP6rF5o3jbGEqD9DY9RHQ8NkNCBzVo3S9W4iU9rXr9XLYY0soPh/GPPBDqAnULLzT2+OUiw4lfnrp8nnW+tQI00/gONGwq/Kn/ATUNQgenboRdbevgtBoMogQGfKFAv8mopJcsZBIkys1/XXPzxzvrnJBW6BTAnlfTW6978NXbdWRU0PpYHLenZzQClPcq3ref9aiZVrYnvc/g33JSnK6ygY4j5Ty6D3lL9Lp1CkrioZJwlRvgddm2nrqXpAJfhoNUM3xQXCY7SC+8UF1nzaN55R0Bdn/0qpb6ulqwvp/dcnDFjfpN6AnxQ==

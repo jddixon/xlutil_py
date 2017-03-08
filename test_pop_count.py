@@ -21,14 +21,16 @@ class TestPopCount(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def slow_popcount32(self, n):  # uint32 -> uint
-        count = 0                   # uint, we trust
+    def slow_popcount32(self, n):       # uint32 -> uint
+        """ count the bits one by one, 32-bit version """
+        count = 0                       # uint, we trust
         for ndx in range(32):
             count += n & 1
             n >>= 1
         return count
 
     def slow_popcount64(self, n):      # uint64 -> uint
+        """ count the bits one by one, 64-bit version """
         count = 0
         for ndx in range(64):
             count += n & 1
@@ -36,14 +38,20 @@ class TestPopCount(unittest.TestCase):
         return count
 
     def crude_popcount32(self, signed):
+        """ count bits as 1s in string, 32-bit version """
         unsigned = signed % 0x100000000
         return bin(unsigned).count('1')
 
     def crude_popcount64(self, signed):
+        """ count bits as 1s in string, 64-bit version """
         unsigned = signed % 0x10000000000000000
         return bin(unsigned).count('1')
 
-    def test_swar32low_order(self):
+    def test_swar32specific_cases(self):
+        """
+        Verify we get expected results for specific cases, 32-bit version.
+        """
+
         self.assertEqual(popcount32(0x00000000), 0)
         self.assertEqual(popcount32(0x00000001), 1)
         self.assertEqual(popcount32(0x00000002), 1)
@@ -63,7 +71,10 @@ class TestPopCount(unittest.TestCase):
         self.assertEqual(popcount32(0xffffffff), 32)
 
     def test_swar32(self):
-        for ndx in range(8):
+        """
+        Verify we get expected results for random values, 32-bit version.
+        """
+        for ndx in range(16):
             n = self.rng.next_int32()
             slow_count = self.slow_popcount32(n)
             swar32count = popcount32(n)
@@ -78,10 +89,12 @@ class TestPopCount(unittest.TestCase):
             self.assertEqual(swar32count, slow_count)
             self.assertEqual(swar32count, crude_count)
 
-    def test_swar64low_order(self):
+    def test_swar64specific_cases(self):
+        """
+        Verify we get expected results for specific cases, 64-bit version.
+        """
         self.assertEqual(popcount64(0x0000000000000000), 0)
         self.assertEqual(popcount64(0x0000000000000001), 1)
-        self.assertEqual(popcount64(0x0000000000000002), 1)
         self.assertEqual(popcount64(0x0000000000000003), 2)
         self.assertEqual(popcount64(0x0000000000000007), 3)
         self.assertEqual(popcount64(0x000000000000000f), 4)
@@ -93,10 +106,26 @@ class TestPopCount(unittest.TestCase):
         self.assertEqual(popcount64(0x00000000000003ff), 10)
         self.assertEqual(popcount64(0x00000000000007ff), 11)
         self.assertEqual(popcount64(0x0000000000000fff), 12)
+        self.assertEqual(popcount64(0x0000000000001fff), 13)
+
+        self.assertEqual(popcount64(0x1fffffffffffffff), 61)
+        self.assertEqual(popcount64(0x3fffffffffffffff), 62)
+        self.assertEqual(popcount64(0x7fffffffffffffff), 63)
         self.assertEqual(popcount64(0xffffffffffffffff), 64)
 
+        self.assertEqual(popcount64(0x1000000000000000), 1)
+        self.assertEqual(popcount64(0x3000000000000000), 2)
+        self.assertEqual(popcount64(0x7000000000000000), 3)
+        self.assertEqual(popcount64(0x8000000000000000), 1)
+        self.assertEqual(popcount64(0xa000000000000000), 2)
+        self.assertEqual(popcount64(0xe000000000000000), 3)
+        self.assertEqual(popcount64(0xf000000000000000), 4)
+
     def test_swar64(self):
-        for ndx in range(8):
+        """
+        Verify we get expected results for random values, 64-bit version.
+        """
+        for ndx in range(16):
             n1 = self.rng.next_int64()
             n2 = self.rng.next_int64()
             n = (n1 << 32) ^ n2         # we want a full 64 random bits
