@@ -1,5 +1,10 @@
 py/xlutil_py/CHANGES
 
+v0.1.2
+    2017-05-27
+        * add mkEpochFromUTC, mkTimestamp, Context, Namespace       SLOC  774
+    2017-03-08
+        * pylint to 10.0                                            SLOC  485
 v0.1.1
     2017-03-08
         * simplify library code a bit, elaborate tests a bit        SLOC  473
@@ -12,6 +17,7 @@ v0.0.2
 v0.0.1
     2017-03-06
         * initial commit
+
 
 
 

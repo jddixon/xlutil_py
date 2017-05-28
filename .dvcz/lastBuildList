@@ -1,4 +1,4 @@
------BEGIN RSA PUBLIC KEY-----
+-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl9xsFHvzEsi3G8q8dUOM
 3v4WLJefw8Kv0hHBGFPFQF1WRPldwPGNdVKql8zcO52KO4hzFNHNSBCGgH8cbtAk
 mLWB78ackABFJzhY9TEbPkLnoMXJHAXQpZK/JAudSixuAZIXYtIyBWfgLaHjurAT
@@ -6,43 +6,43 @@ mLWB78ackABFJzhY9TEbPkLnoMXJHAXQpZK/JAudSixuAZIXYtIyBWfgLaHjurAT
 Giaje1YAJPNVBt3dlOA5lhBp4GpSYBskJ9UR2Zyt3lgAGK3dEwxYETLMh9VWEV8i
 k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
------END RSA PUBLIC KEY-----
-xlutil_py v0.1.1
-2017-03-08 20:06:29
+-----END PUBLIC KEY-----
+xlutil_py v0.1.2
+2017-05-28 00:59:28
 # BEGIN CONTENT #
 xlutil_py
  .dvcz
-  builds f5c08e44a4d07dbbbbd0b7b18ae20df1893dfc9e
-  copyright 03efbf5a1d4c1f2a8e01f434653fab4f20777238
-  lastBuildList 10b85264ebd0cdfdf55c5178bc9577af7736a323
+  builds a83937ecaf4e40d1f8b96e4249dce37e301a6e70
+  copyright 04e8696e6424c21d717e46008780505d598eb59a
+  lastBuildList 3c22840eca0d452e103dd924bfde4688effbd378
   license 5977a55c75bb4612004451a56b0b4c22d9d3311d
-  projCfg 980e3a44fbc212bef1e6a37b44e653b408c9b999
+  projCfg 9f997a2e777ce1578a520f4d82c83585a3e6e9eb
   projCfg.local c3059019a5ebe5fb771b14debabce04a4bad02ed
-  version 2a214c88b83a73f5fa66df1bc81cfb60cb86080a
- .gitignore a29a464d1f999a8323f7cafe43fe2587b321f818
+  version 2a15cf236834e6976ffc8b525c3c3a20a21811aa
+ .gitignore 9b81ca41b8f8cdad84069782f69745729f2dd932
  .gitignore.local 701e71ad917b19e7f6b7fd4bdc542180e9d977a7
- CHANGES 1ca0414c426b7ac9b4b46536ca83cafa054b8368
- LICENSE-MIT.md 22d1a7acfe925d189280793d86aa9b1dc542daab
+ CHANGES 839f05abbbbde00eec033b65133085a0b83e322b
+ LICENSE-MIT.md aec2b90058ed291d26eef53badc44802cda9bcde
  README.md 57dc0ed5ae3749d1fbab20e20cb74131b779b892
- TODO 865f1c16a2224a547a79dda1fe7dae783e1aa4c8
+ TODO 32f46f7efd2ed34d0c1462fce50c19481df2a74c
  bkp2U 17abb2c0400ac7102d376ba25c03aa842ef04025
  checkCoverage 092512357f009c7e15e329aee8f85b925d5b670e
  countem b849f32024776cabe01affc82358932b2ea41df9
- dist
-  xlutil_py-0.0.2.tar.gz f36ba6f305e7d6adc51dee9566c2c721974e2d15
-  xlutil_py-0.1.0.tar.gz 9555f432db4a987310d5379ee53367aaae928610
-  xlutil_py-0.1.1.tar.gz 89e02e560c525a3cf761546222270a5642147c4a
  doPyLint a93e4b6f53e760979759ca7d9b39b6d1c4885724
  ghpDoc
   index.md 77fdd612bb51ef5c0095da174bd13b55c8649f3f
  installit 4ef746aba52db046ed4b9931480c431b92f0419e
  pylintrc dd234fda24a547a9071f1e4608a3c1f3b7de9aa0
  setup.py 66c06a9521ca3de91025839deec68172e7bf7c40
- styleit ed5d5a5dde21c5c18035aba6035582023b2628cc
- test.all b8a6bea8b32654ba01068ed0d8528cc7dc620c2f
- test_pop_count.py b3333bd3ba7d218a755892a25e95972a4de10a0e
+ styleit 6e3947c19ebf1f14e25c9b0bda322e209d3e109a
+ test.all 6bf32c017fb5f19799c53077bed14e8021f26c9a
+ testContext.py 254a7d31a5896bb18de766e61d0b8cd38d216d9b
+ testNamespace.py fb688e4c3c49956edbfb28dcbc08312629dc16c5
+ testTimestamp.py ca2641146a075a9e94c7cfe6d6d13a790eb0afac
+ test_pop_count.py e51ade6c00b31b54537b3346a38ae1169ebca95b
  xlutil
-  __init__.py 4aecd9f5805aacccaa1ad40ee427346a39eb19c4
+  __init__.py fcced87ba39eda4acbf0f1c8d60af27dbb7af3f3
+  context.py 0d37de361a66bbed9e0c1027e046f7721f9807d2
 # END CONTENT #
 
-YkQUC6T5ORjFCBqiZUl57gZ0yXTR/4oxP6rF5o3jbGEqD9DY9RHQ8NkNCBzVo3S9W4iU9rXr9XLYY0soPh/GPPBDqAnULLzT2+OUiw4lfnrp8nnW+tQI00/gONGwq/Kn/ATUNQgenboRdbevgtBoMogQGfKFAv8mopJcsZBIkys1/XXPzxzvrnJBW6BTAnlfTW6978NXbdWRU0PpYHLenZzQClPcq3ref9aiZVrYnvc/g33JSnK6ygY4j5Ty6D3lL9Lp1CkrioZJwlRvgddm2nrqXpAJfhoNUM3xQXCY7SC+8UF1nzaN55R0Bdn/0qpb6ulqwvp/dcnDFjfpN6AnxQ==
+R4khvQ2Up6MhSIvgqgpYBseMe1gnUUU5JNDTWTQ2XM9mHAIwYK+Cnfsvo+QsmY1YhppIepNv5b0frCfDNbzOFP2DsUjjoCknvA1yeOsnXetofLBmINdXQ/lxBziiNQyDZpAA9h3wx0+rj1jWHsidWLvmAC+bKB2mOoKMI1331A4K7543nJyDrekI0LrQP3qnClkuoOSpYISH1+3/aS0aMZqx4TUrQZ0QOoqMOjuuK4pFwh67aLZ812l1u2VawpVZ7Wghyg+Vrad013127zX1J+6JAqYJjyqwm157GRntZXBtyaT1FlX/lppIilp4a8i5fKdhbR5ZYh50LcdGSP/ktA==

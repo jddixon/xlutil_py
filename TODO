@@ -1,5 +1,8 @@
 py/xlutil_py/TODO
 
+2017-03-09
+    * drop dump_byte_slice, replacing it with binascii.b2a_hex()
+
 2017-03-07
     * write C version of popcount{32,64} 
     * benchmark against the other implementations

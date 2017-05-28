@@ -9,7 +9,7 @@ import time
 import unittest
 
 from rnglib import SimpleRNG
-from xlutil import popcount32, popcount64, dump_byte_slice
+from xlutil import popcount32, popcount64   # , dump_byte_slice
 
 
 class TestPopCount(unittest.TestCase):
@@ -21,28 +21,32 @@ class TestPopCount(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def slow_popcount32(self, n):       # uint32 -> uint
+    @staticmethod
+    def slow_popcount32(nnn):       # uint32 -> uint
         """ count the bits one by one, 32-bit version """
         count = 0                       # uint, we trust
-        for ndx in range(32):
-            count += n & 1
-            n >>= 1
+        for _ in range(32):
+            count += nnn & 1
+            nnn >>= 1
         return count
 
-    def slow_popcount64(self, n):      # uint64 -> uint
+    @staticmethod
+    def slow_popcount64(nnn):    # uint64 -> uint
         """ count the bits one by one, 64-bit version """
         count = 0
-        for ndx in range(64):
-            count += n & 1
-            n >>= 1
+        for _ in range(64):
+            count += nnn & 1
+            nnn >>= 1
         return count
 
-    def crude_popcount32(self, signed):
+    @staticmethod
+    def crude_popcount32(signed):
         """ count bits as 1s in string, 32-bit version """
         unsigned = signed % 0x100000000
         return bin(unsigned).count('1')
 
-    def crude_popcount64(self, signed):
+    @staticmethod
+    def crude_popcount64(signed):
         """ count bits as 1s in string, 64-bit version """
         unsigned = signed % 0x10000000000000000
         return bin(unsigned).count('1')
@@ -74,13 +78,13 @@ class TestPopCount(unittest.TestCase):
         """
         Verify we get expected results for random values, 32-bit version.
         """
-        for ndx in range(16):
-            n = self.rng.next_int32()
-            slow_count = self.slow_popcount32(n)
-            swar32count = popcount32(n)
-            crude_count = self.crude_popcount32(n)
+        for _ in range(16):
+            nnn = self.rng.next_int32()
+            slow_count = self.slow_popcount32(nnn)
+            swar32count = popcount32(nnn)
+            crude_count = self.crude_popcount32(nnn)
             # DEBUG
-            #print("%d: n = %x" % (ndx, n))
+            #print("%d: n = %x" % (ndx, nnn))
             #print("    slow_count:  %d" % slow_count)
             #print("    crude_count: %d" % crude_count)
             #print("    swar32count: %d" % swar32count)
@@ -125,15 +129,16 @@ class TestPopCount(unittest.TestCase):
         """
         Verify we get expected results for random values, 64-bit version.
         """
-        for ndx in range(16):
-            n1 = self.rng.next_int64()
-            n2 = self.rng.next_int64()
-            n = (n1 << 32) ^ n2         # we want a full 64 random bits
-            slow_count = self.slow_popcount64(n)
-            swar64count = popcount64(n)
-            crude_count = self.crude_popcount64(n)
+        for _ in range(16):
+            nn1 = self.rng.next_int64()
+            nn2 = self.rng.next_int64()
+            nnn = (nn1 << 32) ^ nn2         # we want a full 64 random bits
+            slow_count = self.slow_popcount64(nnn)
+            swar64count = popcount64(nnn)
+            crude_count = self.crude_popcount64(nnn)
             self.assertEqual(swar64count, slow_count)
             self.assertEqual(swar64count, crude_count)
+
 
 if __name__ == '__main__':
     unittest.main()
