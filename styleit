@@ -4,7 +4,8 @@ if [ ! -z "${DEV_BASE// }" ]
 then
   cd $DEV_BASE/py/xlutil_py
   
-  autopep8 -ai -r xlutil *.py
+  autopep8 -ai *.py
+  autopep8 -air xlutil
   
 else
   echo "DEV_BASE is not defined"
