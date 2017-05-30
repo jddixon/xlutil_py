@@ -7,24 +7,24 @@ Giaje1YAJPNVBt3dlOA5lhBp4GpSYBskJ9UR2Zyt3lgAGK3dEwxYETLMh9VWEV8i
 k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
-xlutil_py v0.1.2
-2017-05-28 00:59:28
+xlutil_py v0.1.3
+2017-05-30 19:50:11
 # BEGIN CONTENT #
 xlutil_py
  .dvcz
-  builds a83937ecaf4e40d1f8b96e4249dce37e301a6e70
+  builds 5c1091b48c86fb624dc76d1e1aa5b3b559f74e0f
   copyright 04e8696e6424c21d717e46008780505d598eb59a
-  lastBuildList 3c22840eca0d452e103dd924bfde4688effbd378
+  lastBuildList b2eb938154ca2f64e1c41397bc71e2bafd87d04e
   license 5977a55c75bb4612004451a56b0b4c22d9d3311d
   projCfg 9f997a2e777ce1578a520f4d82c83585a3e6e9eb
   projCfg.local c3059019a5ebe5fb771b14debabce04a4bad02ed
-  version 2a15cf236834e6976ffc8b525c3c3a20a21811aa
+  version 6d4c479b7932a10028297850f590a849b46d07be
  .gitignore 9b81ca41b8f8cdad84069782f69745729f2dd932
  .gitignore.local 701e71ad917b19e7f6b7fd4bdc542180e9d977a7
- CHANGES 839f05abbbbde00eec033b65133085a0b83e322b
+ CHANGES 7a6b5430ed7c86d651a2d5278f4c381473d54ef1
  LICENSE-MIT.md aec2b90058ed291d26eef53badc44802cda9bcde
  README.md 57dc0ed5ae3749d1fbab20e20cb74131b779b892
- TODO 32f46f7efd2ed34d0c1462fce50c19481df2a74c
+ TODO 6714fb7114702b03a880a8793393a26e5ecb7dc1
  bkp2U 17abb2c0400ac7102d376ba25c03aa842ef04025
  checkCoverage 092512357f009c7e15e329aee8f85b925d5b670e
  countem b849f32024776cabe01affc82358932b2ea41df9
@@ -38,11 +38,11 @@ xlutil_py
  test.all 6bf32c017fb5f19799c53077bed14e8021f26c9a
  testContext.py 254a7d31a5896bb18de766e61d0b8cd38d216d9b
  testNamespace.py fb688e4c3c49956edbfb28dcbc08312629dc16c5
- testTimestamp.py ca2641146a075a9e94c7cfe6d6d13a790eb0afac
+ testTimestamp.py 9ddc7bbb57c4b02bdf631dc3c5e2a84b79976138
  test_pop_count.py e51ade6c00b31b54537b3346a38ae1169ebca95b
  xlutil
-  __init__.py fcced87ba39eda4acbf0f1c8d60af27dbb7af3f3
+  __init__.py f4b5ed2e2e067541adb936de97105ca5f1448fb9
   context.py 0d37de361a66bbed9e0c1027e046f7721f9807d2
 # END CONTENT #
 
-R4khvQ2Up6MhSIvgqgpYBseMe1gnUUU5JNDTWTQ2XM9mHAIwYK+Cnfsvo+QsmY1YhppIepNv5b0frCfDNbzOFP2DsUjjoCknvA1yeOsnXetofLBmINdXQ/lxBziiNQyDZpAA9h3wx0+rj1jWHsidWLvmAC+bKB2mOoKMI1331A4K7543nJyDrekI0LrQP3qnClkuoOSpYISH1+3/aS0aMZqx4TUrQZ0QOoqMOjuuK4pFwh67aLZ812l1u2VawpVZ7Wghyg+Vrad013127zX1J+6JAqYJjyqwm157GRntZXBtyaT1FlX/lppIilp4a8i5fKdhbR5ZYh50LcdGSP/ktA==
+YQMf6Nn1rUMa0TaZvzpPXPuEG+anErf2trJCN+V/vWTdQ/9RoFVw3utdZyVR0HdY07HMTHXYkqiSkuxGiMR9P8yyn15ouKpZxoOkruDvmav61mcMMc6ubpSFP4dziEfl5jKtQke40dX4GE93AVLNUANHorwhaUBvr4wqhiqw4aCIB4C53AD7HWIluk7AJ1WgN2RB2FwHOSK/c0Tg8V2sROh/I4Iptgwyvp9HMdKcZB2+anO53mEV/zLyYtYJn2Sow72U3Ddp/wMaglLrB+z1BnE6TmcYbNM9pnEZJYLBmXESt4/qIrmZBMGLvw4bdw50zhMuVqHyEUlTn7kcmUcNEg==
