@@ -7,12 +7,12 @@ Utility library for python XLattice packages.
 import time
 from .context import Context
 
-__version__ = '0.1.2'
-__version_date__ = '2017-05-27'
+__version__ = '0.1.3'
+__version_date__ = '2017-05-30'
 
 __all__ = ['__version__', '__version_date__',
-           'mkEpochFromUTC', 'mkTimestamp',
-           'mkEpoch',       # CONSIDER ME DEPRECATED
+           'getUTCTimestamp', 'mkEpochFromUTC',
+           'mkTimestamp', 'mkEpoch',       # CONSIDER ME DEPRECATED
            'popcount32', 'popcount64', 'dump_byte_slice',
 
            # classes
@@ -102,9 +102,14 @@ def dump_byte_slice(byte_str):            # -> str
 # TIMESTAMP ---------------------------------------------------------
 
 
+def getUTCTimestamp():
+    """ returns the current UTC time as a CCYYMMDD-HHMMSS string"""
+    return "%04d%02d%02d-%02d%02d%02d" % time.gmtime()[:6]
+
+
 def mkEpochFromUTC(date_time):
     """
-    Convert UTC string date to integer seconds since epoch.
+    Convert UTC timestamp to integer seconds since epoch.
 
     Using code should set
         os.environ['TZ'] = 'UTC'
@@ -115,9 +120,5 @@ def mkEpochFromUTC(date_time):
 
 # CONSIDER ME DEPRECATED
 mkEpoch = mkEpochFromUTC
+mkTimestamp = getUTCTimestamp
 # END DEPRECATED
-
-
-def mkTimestamp():
-    """ returns the GMT time as a CCYYMMDD-HHMMSS string"""
-    return "%04d%02d%02d-%02d%02d%02d" % time.gmtime()[:6]

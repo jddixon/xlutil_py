@@ -6,7 +6,7 @@ import os
 import threading
 import time
 import unittest
-from xlutil import mkEpochFromUTC, mkTimestamp
+from xlutil import mkEpochFromUTC, getUTCTimestamp
 
 
 class TestTimestamp (unittest.TestCase):
@@ -21,7 +21,7 @@ class TestTimestamp (unittest.TestCase):
         # using code should set this:
         os.environ['TZ'] = 'UTC'
         t = time.time()
-        tstamp = mkTimestamp()      # UTC
+        tstamp = getUTCTimestamp()      # UTC
         s = mkEpochFromUTC(tstamp)
         if t > s:
             deltaT = t - s
