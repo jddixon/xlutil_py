@@ -2,11 +2,13 @@
 project:xlutil_py
 package:xlutil
 mainlang:py
-version:0.1.1
-versionDate:2017-03-08
+version:0.1.3
+versionDate:2017-05-30
 :?dirs?:
 dir:std:ghpDoc
 dir:std:dist
+dir:std:src
+dir:std:tests
 dir:std:.dvcz
 dir:pkg:xlutil
 dir:clr:build
@@ -39,7 +41,3 @@ bash:std:doPyLint
 bash:std:checkCoverage
 bash:std:bkp2u
 py:std:setup.py
-py:test:testContext.py
-py:test:testNamespace.py
-py:test:testTimestamp.py
-py:test:test_pop_count.py
