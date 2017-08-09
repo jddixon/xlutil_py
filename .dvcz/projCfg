@@ -2,8 +2,8 @@
 project:xlutil_py
 package:xlutil
 mainlang:py
-version:0.1.3
-versionDate:2017-05-30
+version:0.1.4
+versionDate:2017-07-07
 :?dirs?:
 dir:std:ghpDoc
 dir:std:dist
@@ -28,10 +28,15 @@ code:std:pylintrc
 code:std:.coveragerc
 code:std:check.summary
 code:std:MANIFEST.in
+code:std:tox.ini
+code:std:tox.requirements.txt
+code:std:tox.test_requirements.txt
 txt:std:LICENSE-MIT.md
 txt:std:CHANGES
 txt:std:README.md
 txt:std:TODO
+txt:local:requirements.txt
+txt:local:test_requirements.txt
 bash:std:bkp2U
 bash:std:countem
 bash:std:installit
@@ -40,4 +45,5 @@ bash:std:test.all
 bash:std:doPyLint
 bash:std:checkCoverage
 bash:std:bkp2u
+py:std:setup.cfg
 py:std:setup.py
