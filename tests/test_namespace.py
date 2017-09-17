@@ -2,8 +2,6 @@
 
 # ~/dev/py/xlutil/testNamespace.py
 
-import os
-import threading
 import time
 import unittest
 from rnglib import SimpleRNG

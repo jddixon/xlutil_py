@@ -1,5 +1,8 @@
 py/xlutil_py/CHANGES
 
+v0.1.6
+    2017-09-17
+        * pep8 etc; correct tox.ini, requirements.txt               SLOC  831
 v0.1.5
     2017-08-09
         * rewrite setup.py, add tox.ini, *requirements.txt          SLOC  820
@@ -26,6 +29,7 @@ v0.0.2
 v0.0.1
     2017-03-06
         * initial commit
+
 
 
 

@@ -2,8 +2,8 @@
 
 # ~/dev/py/xlutil/testContext.py
 
-import os
-import threading
+# import os
+# import threading
 import time
 import unittest
 from rnglib import SimpleRNG
@@ -35,13 +35,13 @@ class TestContext (unittest.TestCase):
 
     def testAddingNulls(self):
         try:
-            self.ctx.bind(null, "bar")
-            fail("bind with null name succeeded!")
+            self.ctx.bind(None, "bar")
+            self.fail("bind with None name succeeded!")
         except Exception as e:
             pass  # success
         try:
-            self.ctx.bind("foo", null)
-            fail("bind with null object succeeded!")
+            self.ctx.bind("foo", None)
+            self.fail("bind with None object succeeded!")
         except Exception as e:
             pass  # success
 
@@ -56,7 +56,7 @@ class TestContext (unittest.TestCase):
         self.assertTrue('bar' in self.ctx)
         self.assertFalse('baz' in self.ctx)
         # keys() method -----------------------------------
-        keyz = list(self.ctx.keys())
+#       keyz = list(self.ctx.keys())
         self.assertTrue('bar' in list(self.ctx.keys()))
         self.assertFalse('baz' in list(self.ctx.keys()))
 
