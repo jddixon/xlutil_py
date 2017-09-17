@@ -1,1 +1,2 @@
 # xlutil_py/requirements.txt     
+setuptools

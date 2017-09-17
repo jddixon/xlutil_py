@@ -3,8 +3,6 @@
 
 """ Test the pop_count (aka SWAR) functions. """
 
-#import hashlib
-#import os
 import time
 import unittest
 
@@ -84,10 +82,10 @@ class TestPopCount(unittest.TestCase):
             swar32count = popcount32(nnn)
             crude_count = self.crude_popcount32(nnn)
             # DEBUG
-            #print("%d: n = %x" % (ndx, nnn))
-            #print("    slow_count:  %d" % slow_count)
-            #print("    crude_count: %d" % crude_count)
-            #print("    swar32count: %d" % swar32count)
+            # print("%d: n = %x" % (ndx, nnn))
+            # print("    slow_count:  %d" % slow_count)
+            # print("    crude_count: %d" % crude_count)
+            # print("    swar32count: %d" % swar32count)
             # print()
             # END
             self.assertEqual(swar32count, slow_count)

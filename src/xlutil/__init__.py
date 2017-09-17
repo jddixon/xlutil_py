@@ -7,8 +7,8 @@ Utility library for python XLattice packages.
 import time
 from .context import Context
 
-__version__ = '0.1.5'
-__version_date__ = '2017-08-09'
+__version__ = '0.1.6'
+__version_date__ = '2017-09-17'
 
 __all__ = ['__version__', '__version_date__',
            'getUTCTimestamp', 'mkEpochFromUTC',
@@ -41,7 +41,6 @@ class Namespace(dict):
 
     def __setattr__(self, name, value):
         self[name] = value
-
 
 
 # POPCOUNT ----------------------------------------------------------

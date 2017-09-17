@@ -3,7 +3,6 @@
 # ~/dev/py/xlutil/testTimestamp.py
 
 import os
-import threading
 import time
 import unittest
 from xlutil import mkEpochFromUTC, getUTCTimestamp
