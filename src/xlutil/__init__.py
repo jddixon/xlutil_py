@@ -7,12 +7,11 @@ Utility library for python XLattice packages.
 import time
 from .context import Context
 
-__version__ = '0.1.6'
-__version_date__ = '2017-09-17'
+__version__ = '0.1.7'
+__version_date__ = '2017-10-09'
 
 __all__ = ['__version__', '__version_date__',
            'getUTCTimestamp', 'mkEpochFromUTC',
-           'mkTimestamp', 'mkEpoch',       # CONSIDER ME DEPRECATED
            'popcount32', 'popcount64', 'dump_byte_slice',
 
            # classes
@@ -115,9 +114,3 @@ def mkEpochFromUTC(date_time):
     """
     pattern = '%Y%m%d-%H%M%S'
     return int(time.mktime(time.strptime(date_time, pattern)))
-
-
-# CONSIDER ME DEPRECATED
-mkEpoch = mkEpochFromUTC
-mkTimestamp = getUTCTimestamp
-# END DEPRECATED
