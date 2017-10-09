@@ -7,25 +7,26 @@ Giaje1YAJPNVBt3dlOA5lhBp4GpSYBskJ9UR2Zyt3lgAGK3dEwxYETLMh9VWEV8i
 k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
-xlutil_py v0.1.6
-2017-09-17 23:06:17
+xlutil_py v0.1.7
+2017-10-09 22:54:19
 # BEGIN CONTENT #
 xlutil_py
  .cache
   v
    cache
-    lastfailed 1eeadb784e7e1090b2e851bd3a7d114dc49691d9
+    lastfailed bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f
  .dvcz
-  builds 78de0fe8c4122c0d55ac28a7d839b50aa7f42411
+  builds fff5c08075ab74dcc566a916e199380802d93151
   copyright 04e8696e6424c21d717e46008780505d598eb59a
-  lastBuildList d013e69a4963299b343925ac8fc2556738d21329
+  lastBuildList 20b6c710c65badfbea4187b1ad0c7a65810a1041
   license 5977a55c75bb4612004451a56b0b4c22d9d3311d
   projCfg 0a760a1ce48066cbd0338c926e14f4774b1c920b
   projCfg.local c3059019a5ebe5fb771b14debabce04a4bad02ed
-  version 7c9d9ee6ff2d28059c0d42bfa34f03c8873a2c01
+  projConfig.toml 330cbc27dc8b66ff5096dc90fd3f9b584ad774d0
+  version c4dee742851873c8e8af0281b8f07c008d0e8529
  .gitignore f588928d66e053d08e0c1d824b6874a244573090
  .gitignore.local 701e71ad917b19e7f6b7fd4bdc542180e9d977a7
- CHANGES 8deec8ba7c0679ea184a56ca51151b163e34617d
+ CHANGES 041ca507f8874427409ff5566a75c2d88bb65951
  LICENSE-MIT.md aec2b90058ed291d26eef53badc44802cda9bcde
  MANIFEST.in 4adf906b2cd5a5e68a3d78a36d9c643627646b7e
  README.md 57dc0ed5ae3749d1fbab20e20cb74131b779b892
@@ -39,10 +40,10 @@ xlutil_py
  installit 4ef746aba52db046ed4b9931480c431b92f0419e
  pylintrc dd234fda24a547a9071f1e4608a3c1f3b7de9aa0
  requirements.txt 5ebf96587bf55369ff74f922d3a6a960fa91897e
- setup.py 3614ba25062870f054497d9f33d736d416a692e2
+ setup.py 7ff1c76db48257f6097f746aa3e9c113e2c59e96
  src
   xlutil
-   __init__.py 3391a37523f9ca5300a25d5e186623ca1ccd396a
+   __init__.py 637a93fa4b1ff3982afa5f2a1ed073f53a3ae0ca
    context.py 0d37de361a66bbed9e0c1027e046f7721f9807d2
  styleit 5804a242d2bae3a03fbfd822da81123ec849e0cb
  test.all 894c1770125a92e44ebc9cec142b10cfadbe5798
@@ -55,4 +56,4 @@ xlutil_py
  tox.ini 370b357ed76d280bfc6470c199b1f558cb070182
 # END CONTENT #
 
-g+hT6X+Ozd2cDoQcEBX3/Ix/pYr2ONJnUMPcwdc162ixnJYdG64Uv+vx6Xq2Z4fnJd3pKzWMSE7z5QufCNecwm3GhuKLE6/pYD6k3Uppm6VKQZKmc677Ncac3y+qT/oyI2RwIlGifZzFeVVUrZ5MCkE7vZ4u2Hv0AF13bVQneh0iCSGwxm6QlNd5/JajXBD0MveG9NP9bU4KwgF9erWfmqfrrucgGRy9y2t4AttmMdksjooM74RnH5z0WvqwwAiEA9/0RoVJXzJpLUdHeEZj5cxySNDgpuwKhacN907I2pNWIW51fjAyX7J6lQFLslpPlrswQBOVXaIg/hWo14QnEw==
+AqrXH2904XB8RMZNu7ot3cMHosjecNm2102pL+QJ8OofbpuvFtu4i39YyT8a/wInyon9QOdNI2qO4+Lnrd1gMXT8Xkp0LNxiMmXDvgwmrLb61QWg/b3DWnBM+s7vPamZj0u/zRlFWl4FjQV2CR7HD7gSCwlCj6LzjA/5wfVnGVuumNWvN8Y9REnxdKv1A9pUGwipJLN2U7PdICHkovKuloeyNoB3I+HEX2Vwfso0tFG5D5cX+27dQwXQPKPDGo/imTPUvdhjlnGFSZyEnnWeqJ8+BEFBvlZIlIhvyYzGkpqwTP3DbwyAyX9tw4lVM6x2BZizzP24AojkIKI1EFgH2Q==

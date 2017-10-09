@@ -1,5 +1,10 @@
 py/xlutil_py/CHANGES
 
+v0.1.7
+    2017-10-09
+        * add .dvcz/projConfig.toml                                 SLOC  868
+    2017-09-26
+        * dropped deprecated functions                              SLOC  833
 v0.1.6
     2017-09-17
         * pep8 etc; correct tox.ini, requirements.txt               SLOC  831
@@ -29,6 +34,7 @@ v0.0.2
 v0.0.1
     2017-03-06
         * initial commit
+
 
 
 
