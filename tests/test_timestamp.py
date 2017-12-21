@@ -5,10 +5,10 @@
 import os
 import time
 import unittest
-from xlutil import mkEpochFromUTC, getUTCTimestamp
+from xlutil import mk_epoch_from_utc, get_utc_timestamp
 
 
-class TestTimestamp (unittest.TestCase):
+class TestTimestamp(unittest.TestCase):
 
     def setUp(self):
         pass
@@ -16,17 +16,17 @@ class TestTimestamp (unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testEpochConverter(self):
+    def test_epoch_converter(self):
         # using code should set this:
         os.environ['TZ'] = 'UTC'
-        t = time.time()
-        tstamp = getUTCTimestamp()      # UTC
-        s = mkEpochFromUTC(tstamp)
-        if t > s:
-            deltaT = t - s
+        t__ = time.time()
+        tstamp = get_utc_timestamp()      # UTC
+        s__ = mk_epoch_from_utc(tstamp)
+        if t__ > s__:
+            delta_t = t__ - s__
         else:
-            deltaT = s - t
-        self.assertTrue(deltaT <= 1)
+            delta_t = s__ - t__
+        self.assertTrue(delta_t <= 1)
 
 
 if __name__ == '__main__':

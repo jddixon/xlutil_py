@@ -7,11 +7,11 @@ Utility library for python XLattice packages.
 import time
 from .context import Context
 
-__version__ = '0.1.7'
-__version_date__ = '2017-10-09'
+__version__ = '0.1.8'
+__version_date__ = '2017-12-21'
 
 __all__ = ['__version__', '__version_date__',
-           'getUTCTimestamp', 'mkEpochFromUTC',
+           'get_utc_timestamp', 'mk_epoch_from_utc',
            'popcount32', 'popcount64', 'dump_byte_slice',
 
            # classes
@@ -27,16 +27,19 @@ class XLUtilError(RuntimeError):
 
 
 class Namespace(dict):
-    def __init__(self, pairs={}):
+    def __init__(self, pairs=None):
+        if not pairs:
+            pairs = {}
+        # pylint: disable=useless-super-delegation
         super(Namespace, self).__init__(pairs)
 
     def __getattribute__(self, name):
         try:
             return self[name]
         except KeyError:
-            errMsg = "'%s' object has no attribute '%s'" % (
+            err_msg = "'%s' object has no attribute '%s'" % (
                 type(self).__name__, name)
-            raise AttributeError(errMsg)
+            raise AttributeError(err_msg)
 
     def __setattr__(self, name, value):
         self[name] = value
@@ -100,12 +103,12 @@ def dump_byte_slice(byte_str):            # -> str
 # TIMESTAMP ---------------------------------------------------------
 
 
-def getUTCTimestamp():
+def get_utc_timestamp():
     """ returns the current UTC time as a CCYYMMDD-HHMMSS string"""
     return "%04d%02d%02d-%02d%02d%02d" % time.gmtime()[:6]
 
 
-def mkEpochFromUTC(date_time):
+def mk_epoch_from_utc(date_time):
     """
     Convert UTC timestamp to integer seconds since epoch.
 
