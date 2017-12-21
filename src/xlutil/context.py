@@ -24,7 +24,7 @@ class Context(object):
             self._ctx = {kwargs}
         else:
             self._ctx = {}
-        self._ctxLock = threading.Lock()  # born free
+        self._ctx_lock = threading.Lock()  # born free
 
     def bind(self, name, value):
         """
@@ -42,9 +42,9 @@ class Context(object):
             raise ValueError('name may not be None')
         if value is None:
             raise ValueError('value may not be None')
-        self._ctxLock.acquire()
+        self._ctx_lock.acquire()
         self._ctx[name] = value
-        self._ctxLock.release()
+        self._ctx_lock.release()
         return self                 # to support chaining
 
     def lookup(self, name):
@@ -63,14 +63,14 @@ class Context(object):
             raise ValueError('name may not be None')
         value = None
         try:
-            self._ctxLock.acquire()
+            self._ctx_lock.acquire()
             try:
                 value = self._ctx[name]
-            except KeyError as ke:
+            except KeyError:
                 if self._parent is not None:
                     value = self._parent.lookup(name)
         finally:
-            self._ctxLock.release()
+            self._ctx_lock.release()
         return value
 
     def unbind(self, name):
@@ -84,22 +84,22 @@ class Context(object):
         if name is None:
             raise ValueError('name may not be None')
         try:
-            self._ctxLock.acquire()
+            self._ctx_lock.acquire()
             del self._ctx[name]
         finally:
-            self._ctxLock.release()
+            self._ctx_lock.release()
 
     def __contains__(self, whatever):
         """
         Support for 'in'.  However, this only considers the dictionary
         at this level.
         """
-        retVal = False
+        ret_val = False
         if whatever is not None:
-            self._ctxLock.acquire()
-            retVal = whatever in self._ctx
-            self._ctxLock.release()
-        return retVal
+            self._ctx_lock.acquire()
+            ret_val = whatever in self._ctx
+            self._ctx_lock.release()
+        return ret_val
 
     def keys(self):
         """
@@ -107,33 +107,34 @@ class Context(object):
         level, locking the dictionary for the time required to copy
         the list of keys.
         """
-        retVal = None
-        self._ctxLock.acquire()
-        retVal = list(self._ctx.keys())
-        self._ctxLock.release()
-        return retVal
+        ret_val = None
+        self._ctx_lock.acquire()
+        ret_val = list(self._ctx.keys())
+        self._ctx_lock.release()
+        return ret_val
 
     def __len__(self):
-        self._ctxLock.acquire()
+        self._ctx_lock.acquire()
         val = len(self._ctx)
-        self._ctxLock.release()
+        self._ctx_lock.release()
         return val
 
     @property
-    def parent(self): return self._parent     # may be None
+    def parent(self):
+        return self._parent     # may be None
 
     @parent.setter
-    def parent(self, newParent):
+    def parent(self, new_parent):
         """
         Change the parent Context.
 
         @param  newParent New parent Context, possibly null.
         """
-        if newParent is not None and not isinstance(newParent, Context):
+        if new_parent is not None and not isinstance(new_parent, Context):
             raise ValueError('new parent must be a Context or None')
-        self._ctxLock.acquire()
-        self._parent = newParent
-        self._ctxLock.release()
+        self._ctx_lock.acquire()
+        self._parent = new_parent
+        self._ctx_lock.release()
 
     def flush(self):
         pass

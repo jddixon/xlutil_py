@@ -6,16 +6,16 @@
 from os.path import exists
 from setuptools import setup
 
-long_desc = None
+LONG_DESC = None
 if exists('README.md'):
     with open('README.md', 'r') as file:
-        long_desc = file.read()
+        LONG_DESC = file.read()
 
 setup(name='xlutil_py',
-      version='0.1.7',
+      version='0.1.8',
       author='Jim Dixon',
       author_email='jddixon@gmail.com',
-      long_description=long_desc,
+      long_description=LONG_DESC,
       packages=['xlutil'],
       package_dir={'': 'src'},
       py_modules=[],

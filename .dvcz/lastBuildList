@@ -7,26 +7,23 @@ Giaje1YAJPNVBt3dlOA5lhBp4GpSYBskJ9UR2Zyt3lgAGK3dEwxYETLMh9VWEV8i
 k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
-xlutil_py v0.1.7
-2017-10-09 22:54:19
+xlutil_py
+2017-12-21 22:59:53
 # BEGIN CONTENT #
 xlutil_py
  .cache
   v
    cache
-    lastfailed bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f
+    lastfailed b759adbfd277a53671c84b3045202c7f62217caa
  .dvcz
-  builds fff5c08075ab74dcc566a916e199380802d93151
-  copyright 04e8696e6424c21d717e46008780505d598eb59a
-  lastBuildList 20b6c710c65badfbea4187b1ad0c7a65810a1041
-  license 5977a55c75bb4612004451a56b0b4c22d9d3311d
+  builds c6a34789fb8fe134f84aaa58d26cc0cd13a96766
+  lastBuildList 91a57d5d295f132f301d5e9648127d1f4e95cfc7
   projCfg 0a760a1ce48066cbd0338c926e14f4774b1c920b
   projCfg.local c3059019a5ebe5fb771b14debabce04a4bad02ed
-  projConfig.toml 330cbc27dc8b66ff5096dc90fd3f9b584ad774d0
-  version c4dee742851873c8e8af0281b8f07c008d0e8529
+  projConfig.toml 626b41382d9d7208f5f0be7e5b98022e21c21298
  .gitignore f588928d66e053d08e0c1d824b6874a244573090
  .gitignore.local 701e71ad917b19e7f6b7fd4bdc542180e9d977a7
- CHANGES 041ca507f8874427409ff5566a75c2d88bb65951
+ CHANGES 251ef9e86ef1b812b5e7cca5b50166e66ce4fd6e
  LICENSE-MIT.md aec2b90058ed291d26eef53badc44802cda9bcde
  MANIFEST.in 4adf906b2cd5a5e68a3d78a36d9c643627646b7e
  README.md 57dc0ed5ae3749d1fbab20e20cb74131b779b892
@@ -35,25 +32,27 @@ xlutil_py
  checkCoverage 93d3554696ac0e9447b1f7d8198f20d0d5e4225f
  countem fb8724b7ba40b220b86024912baf83c59270d026
  doPyLint 31321ad99eb3b9ac0928a68c29a8b5b88c9472fb
+ fix_names cbc4e3e69383750f68fd3eb3bc5476a8ccd014b2
  ghpDoc
   index.md 77fdd612bb51ef5c0095da174bd13b55c8649f3f
  installit 4ef746aba52db046ed4b9931480c431b92f0419e
+ name_pairs e3804b0915e4d67009a8a97d889738ef54a1a94a
  pylintrc dd234fda24a547a9071f1e4608a3c1f3b7de9aa0
  requirements.txt 5ebf96587bf55369ff74f922d3a6a960fa91897e
- setup.py 7ff1c76db48257f6097f746aa3e9c113e2c59e96
+ setup.py ce993a506dbeb78e53811adb9a6d9979ee29a9b5
  src
   xlutil
-   __init__.py 637a93fa4b1ff3982afa5f2a1ed073f53a3ae0ca
-   context.py 0d37de361a66bbed9e0c1027e046f7721f9807d2
+   __init__.py 24a821bd5e60604f9066771fccf62a4494c9df82
+   context.py bc9bacd371a3575db6dbea78e3d9171270e9a82e
  styleit 5804a242d2bae3a03fbfd822da81123ec849e0cb
  test.all 894c1770125a92e44ebc9cec142b10cfadbe5798
  test_requirements.txt 34e713b2a2b69e650f6031c3eadaf83730267313
  tests
-  test_context.py 37bd78ee0bed119381f02aec01109b25280f7ed1
-  test_namespace.py fd86fe88fb811d636837c67584736876bb91bde3
+  test_context.py 5e40dcf81e544caad67e1f41e61ca3c8d018e733
+  test_namespace.py a97120faf856a59a29c5665938646a511c853347
   test_pop_count.py e00ce658dfe3d5657dc3e74d39dcb6a20dba932f
-  test_timestamp.py c5bb129d23ac3e1be6a745784f747721ecc6763b
+  test_timestamp.py 844f39bbfafc75ab07cc5aa46de4baebe106e3c6
  tox.ini 370b357ed76d280bfc6470c199b1f558cb070182
 # END CONTENT #
 
-AqrXH2904XB8RMZNu7ot3cMHosjecNm2102pL+QJ8OofbpuvFtu4i39YyT8a/wInyon9QOdNI2qO4+Lnrd1gMXT8Xkp0LNxiMmXDvgwmrLb61QWg/b3DWnBM+s7vPamZj0u/zRlFWl4FjQV2CR7HD7gSCwlCj6LzjA/5wfVnGVuumNWvN8Y9REnxdKv1A9pUGwipJLN2U7PdICHkovKuloeyNoB3I+HEX2Vwfso0tFG5D5cX+27dQwXQPKPDGo/imTPUvdhjlnGFSZyEnnWeqJ8+BEFBvlZIlIhvyYzGkpqwTP3DbwyAyX9tw4lVM6x2BZizzP24AojkIKI1EFgH2Q==
+XTX08Xg5KGrNG3jwcjhDAtspSaU5PePFLiUJnLiS7PnDZiL50BAhmIlceTSB730ncxJdrhkTqZlVZRopDdwgacAvuaT1wR3e2CsIZzH5l+0rmrwmCTbpb3vIRQTIyFNBh2j1wBxfy9j5eHmiL9rNm0PsceKttuYCI/Czk6p3CYAMo0NGGGwzeAWfLRrW/ZEB//tPJC46MBQMiPKMFlx5bdmRT5ErkBLbaZnwBWhMrkvu4edKnt4XSCo6HF/e2SWf7youyEZbFQIueUzxLlAXmwHVAPDLwidEikqOOSFP/0Wpa88LlI+ZHwrbVLiis/o3CpFq4al1DMgemFmMNkK/1Q==

@@ -7,10 +7,11 @@ import unittest
 from rnglib import SimpleRNG
 from xlutil import Namespace
 
-rng = SimpleRNG(time.time())
+RNG = SimpleRNG(time.time())
 
 
-class TestNamespace (unittest.TestCase):
+class TestNamespace(unittest.TestCase):
+    next_seq_nbr = 0
 
     def setUp(self):
         pass
@@ -20,48 +21,47 @@ class TestNamespace (unittest.TestCase):
 
     # utility functions ---------------------------------------------
 
-    def msgValues(self):
+    def msg_values(self):
         """ returns a list """
-        global nextSeqNbr
 
         timestamp = int(time.time())
-        seqNbr = nextSeqNbr
-        nextSeqNbr += 1     # used, so increment it
+        seq_nbr = TestNamespace.next_seq_nbr
+        TestNamespace.next_seq_nbr += 1     # used, so increment it
 
-        zoneName = rng.nextFileName(8)
-        expectedSerial = rng.nextInt32()
-        actualSerial = rng.nextInt32()
-        while actualSerial == expectedSerial:
-            actualSerial = rng.nextInt32()
+        zone_name = RNG.next_file_name(8)
+        expected_serial = RNG.next_int32()
+        actual_serial = RNG.next_int32()
+        while actual_serial == expected_serial:
+            actual_serial = RNG.next_int32()
 
         # NOTE that this is a list
-        return [timestamp, seqNbr, zoneName, expectedSerial, actualSerial]
+        return [timestamp, seq_nbr, zone_name, expected_serial, actual_serial]
 
     # actual unit test(s) -------------------------------------------
 
-    def testANamespace(self):
+    def test_a_namespace(self):
 
         now = int(time.time())
         options = {}                # what we convert into a namespace of sorts
-        options['justShow'] = True  # False
-        options['logDir'] = 'logs'
+        options['just_show'] = True  # False
+        options['log_dir'] = 'logs'
         options['port'] = 55555
-        options['showTimestamp'] = False
-        options['showVersion'] = False
+        options['show_timestamp'] = False
+        options['show_version'] = False
         options['testing'] = False
         options['timestamp'] = now
         options['verbose'] = True  # False
 
-        ns = Namespace(options)
+        ns_ = Namespace(options)
 
-        self.assertTrue(ns.justShow)
-        self.assertEqual('logs', ns.logDir)
-        self.assertEqual(55555, ns.port)
-        self.assertFalse(ns.showTimestamp)
-        self.assertFalse(ns.showVersion)
-        self.assertFalse(ns.testing)
-        self.assertEqual(now, ns.timestamp)
-        self.assertTrue(ns.verbose)
+        self.assertTrue(ns_.just_show)
+        self.assertEqual('logs', ns_.log_dir)
+        self.assertEqual(55555, ns_.port)
+        self.assertFalse(ns_.show_timestamp)
+        self.assertFalse(ns_.show_version)
+        self.assertFalse(ns_.testing)
+        self.assertEqual(now, ns_.timestamp)
+        self.assertTrue(ns_.verbose)
 
 
 if __name__ == '__main__':

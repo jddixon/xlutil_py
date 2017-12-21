@@ -9,10 +9,10 @@ import unittest
 from rnglib import SimpleRNG
 from xlutil import Context
 
-rng = SimpleRNG(time.time())
+RNG = SimpleRNG(time.time())
 
 
-class TestContext (unittest.TestCase):
+class TestContext(unittest.TestCase):
 
     def setUp(self):
         self.ctx = Context()
@@ -24,28 +24,28 @@ class TestContext (unittest.TestCase):
 
     # actual unit test(s) -------------------------------------------
 
-    def testContext(self):
+    def test_context(self):
         pass
 
-    def testEmpty(self):
+    def test_empty(self):
         self.assertIsNotNone(self.ctx)
         self.assertEqual(0, len(self.ctx))
         self.assertIsNone(self.ctx.parent)
         self.assertIsNone(self.ctx.lookup("foo"))
 
-    def testAddingNulls(self):
+    def test_adding_nulls(self):
         try:
             self.ctx.bind(None, "bar")
             self.fail("bind with None name succeeded!")
-        except Exception as e:
+        except Exception:
             pass  # success
         try:
             self.ctx.bind("foo", None)
             self.fail("bind with None object succeeded!")
-        except Exception as e:
+        except Exception:
             pass  # success
 
-    def testSimpleBindings(self):
+    def test_simple_bindings(self):
         self.ctx.bind("foo", "that was foo")
         self.ctx.bind("bar", "that was bar")
         self.assertEqual(2, len(self.ctx))
@@ -60,31 +60,31 @@ class TestContext (unittest.TestCase):
         self.assertTrue('bar' in list(self.ctx.keys()))
         self.assertFalse('baz' in list(self.ctx.keys()))
 
-    def testNestedContexts(self):
-        childCtx = Context(self.ctx)
-        grandChild = Context(childCtx)
-        self.assertTrue(self.ctx == childCtx.parent)
-        self.assertTrue(childCtx == grandChild.parent)
+    def test_nested_contexts(self):
+        child_ctx = Context(self.ctx)
+        grand_child = Context(child_ctx)
+        self.assertTrue(self.ctx == child_ctx.parent)
+        self.assertTrue(child_ctx == grand_child.parent)
 
         # masking bindings
         self.ctx.bind("foo", "bar0")     # <-- should persist
-        childCtx.bind("foo", "bar1")
-        grandChild.bind("foo", "bar2")
-        self.assertEqual("bar2", grandChild.lookup("foo"))
-        grandChild.unbind("foo")
-        self.assertEqual("bar1", grandChild.lookup("foo"))
+        child_ctx.bind("foo", "bar1")
+        grand_child.bind("foo", "bar2")
+        self.assertEqual("bar2", grand_child.lookup("foo"))
+        grand_child.unbind("foo")
+        self.assertEqual("bar1", grand_child.lookup("foo"))
 
-        childCtx.unbind("foo")
-        self.assertEqual("bar0", grandChild.lookup("foo"))
+        child_ctx.unbind("foo")
+        self.assertEqual("bar0", grand_child.lookup("foo"))
         self.ctx.unbind("foo")
-        self.assertIsNone(grandChild.lookup("foo"))
+        self.assertIsNone(grand_child.lookup("foo"))
 
         self.ctx.bind("wombat", "Freddy Boy")
-        self.assertEqual("Freddy Boy", grandChild.lookup("wombat"))
-        grandChild.parent = None
-        self.assertIsNone(grandChild.parent)
+        self.assertEqual("Freddy Boy", grand_child.lookup("wombat"))
+        grand_child.parent = None
+        self.assertIsNone(grand_child.parent)
         # broke chain of contexts
-        self.assertIsNone(grandChild.lookup("wombat"))
+        self.assertIsNone(grand_child.lookup("wombat"))
 
 
 if __name__ == '__main__':
