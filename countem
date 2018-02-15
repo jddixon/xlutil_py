@@ -6,7 +6,10 @@ then
   
   rm -rf build/* tmp/* 
   
-  pySloc -L py  -X cover -X htmlcov -X dist -v $@ src/xlutil tests/testContext.py tests/testNamespace.py tests/testTimestamp.py tests/test_pop_count.py setup.py
+  pySloc -L py  -X cover -X htmlcov -X dist -v $@ \
+      src/extsrc src/xlutil \
+      tests \
+      setup.py
 else
   echo "DEV_BASE is not defined"
 fi

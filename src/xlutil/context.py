@@ -1,53 +1,60 @@
-# ~/dev/py/xlutil/xlutil/context.py
+# xlutil_py/src/xlutil/context.py
 
-import threading
+"""
+The XLattice Context.
+
+A naming context consisting of a possibly nested set of name-to-object
+bindings.  If there is a parent context and a key cannot be resolved
+in this context, an attempt will be made to resolve it in the parent,
+recursively.
+
+Names added to the context must not be None.
+
+This implementation is intended to be thread-safe.
+"""
+
+
+class ContextError(RuntimeError):
+    """ Handles Context-related exceptions. """
+
+# Any reason to make this ABCMeta ?
 
 
 class Context(object):
+    """ The XLattice context. """
 
-    """
-    A naming context consisting of a possibly nested set of name-to-object
-    bindings.  If there is a parent context and a key cannot be resolved
-    in this context, an attempt will be made to resolve it in the parent,
-    recursively.
+    def __init__(self, parent=None):
+        """ Create a Context, optionally with a parent. """
+        self._ctx = dict()
+        self._parent = parent
 
-    Names added to the context must not be null.
+    def synchronize(self):
+        """
+        TBD magic.
 
-    This implementation is intended to be thread-safe.
-    """
+        This makes no sense as it is set out.
+        """
 
-    def __init__(self, parent=None, **kwargs):
-        if parent is not None and not isinstance(parent, Context):
-            raise ValueError('parent must be a Context')
-        self._parent = parent            # may of course be None
-        if kwargs:
-            self._ctx = {kwargs}
-        else:
-            self._ctx = {}
-        self._ctx_lock = threading.Lock()  # born free
-
-    def bind(self, name, value):
+    def bind(self, name, obj):        # -> Context
         """
         Bind a name to an Object at this Context level.  Neither name
-        nor object may be null.
+        nor object may be None.
 
         If this context has a parent, the binding at this level will
         mask any bindings in the parent and above.
 
         @param name the name being bound
         @param o    the Object it is bound to
-        @throws IllegalArgumentException if either is null.
+        @raises ContextError if either is None.
         """
-        if name is None:
-            raise ValueError('name may not be None')
-        if value is None:
-            raise ValueError('value may not be None')
-        self._ctx_lock.acquire()
-        self._ctx[name] = value
-        self._ctx_lock.release()
-        return self                 # to support chaining
 
-    def lookup(self, name):
+        if name is None or obj is None:
+            raise ContextError("name or object is None")
+        self.synchronize()      # XXX needs to sync block
+        self._ctx[name] = obj
+        return self
+
+    def lookup(self, name):          # -> object
         """
         Looks up a name recursively.  If the name is bound at this level,
         the object it is bound to is returned.  Otherwise, if there is
@@ -57,23 +64,19 @@ class Context(object):
 
         @param name the name we are attempting to match
         @return     the value the name is bound to at this or a higher level
-                    or null if there is no such value
+                    or None if there is no such value
         """
         if name is None:
-            raise ValueError('name may not be None')
-        value = None
-        try:
-            self._ctx_lock.acquire()
-            try:
-                value = self._ctx[name]
-            except KeyError:
-                if self._parent is not None:
-                    value = self._parent.lookup(name)
-        finally:
-            self._ctx_lock.release()
-        return value
+            raise ContextError("name cannot be None")
+        obj = None
+        self.synchronize()
+        if name in self._ctx:
+            obj = self._ctx[name]
+        elif self._parent is not None:
+            obj = self._parent[name]
+        return obj
 
-    def unbind(self, name):
+    def unbind(self, name):        # -> None
         """
         Remove a binding from the Context.  If there is no such binding,
         silently ignore the request.  Any binding at a higher level, in
@@ -81,60 +84,34 @@ class Context(object):
 
         @param name Name to be unbound.
         """
+        self.synchronize()
+        # XXX Need to sync on block
         if name is None:
-            raise ValueError('name may not be None')
-        try:
-            self._ctx_lock.acquire()
-            del self._ctx[name]
-        finally:
-            self._ctx_lock.release()
+            raise ContextError("name is None")
+        # XXX will raise if not in dict
+        del self._ctx[name]
 
-    def __contains__(self, whatever):
-        """
-        Support for 'in'.  However, this only considers the dictionary
-        at this level.
-        """
-        ret_val = False
-        if whatever is not None:
-            self._ctx_lock.acquire()
-            ret_val = whatever in self._ctx
-            self._ctx_lock.release()
-        return ret_val
-
-    def keys(self):
-        """
-        Returns an unordered list of keys from the dictionary at this
-        level, locking the dictionary for the time required to copy
-        the list of keys.
-        """
-        ret_val = None
-        self._ctx_lock.acquire()
-        ret_val = list(self._ctx.keys())
-        self._ctx_lock.release()
-        return ret_val
-
-    def __len__(self):
-        self._ctx_lock.acquire()
-        val = len(self._ctx)
-        self._ctx_lock.release()
-        return val
+    def size(self):                 # -> int
+        """ Return the number of bindings at this level. """
+        self.synchronize()          # XXX need to sync on block
+        return len(self._ctx)
 
     @property
     def parent(self):
-        return self._parent     # may be None
+        """
+        Return a reference to the parent Context or None if there is none.
+        """
+        return self._parent
 
     @parent.setter
     def parent(self, new_parent):
         """
-        Change the parent Context.
+        Change the parent Context. This method returns a reference to
+        this instance, to allow method calls to be chained.
 
-        @param  newParent New parent Context, possibly null.
+        @param  new_parent New parent Context, possibly None.
+        Return a reference to the current Context
         """
-        if new_parent is not None and not isinstance(new_parent, Context):
-            raise ValueError('new parent must be a Context or None')
-        self._ctx_lock.acquire()
-        self._parent = new_parent
-        self._ctx_lock.release()
 
-    def flush(self):
-        pass
+        self._parent = new_parent
+        return self

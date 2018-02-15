@@ -4,7 +4,19 @@
 """ Setuptools project configuration for xlutil_py. """
 
 from os.path import exists
-from setuptools import setup
+# from setuptools import setup, Extension
+from distutils.core import setup, Extension
+
+MODULE1 = Extension('cFTLogForPy',
+                    ['src/extsrc/cFTLogForPy.c',
+                     'src/extsrc/evLoop.c',
+                     'src/extsrc/logBufs.c',
+                     'src/extsrc/modFunc.c',
+                     'src/extsrc/threading.c', ],
+                    include_dirs=['/usr/include/python3.6m',
+                                  '/usr/include', ],
+                    libraries=['ev', ],
+                    library_dirs=['/usr/local/lib', ],)
 
 LONG_DESC = None
 if exists('README.md'):
@@ -12,7 +24,7 @@ if exists('README.md'):
         LONG_DESC = file.read()
 
 setup(name='xlutil_py',
-      version='0.1.8',
+      version='0.2.0',
       author='Jim Dixon',
       author_email='jddixon@gmail.com',
       long_description=LONG_DESC,
@@ -22,11 +34,11 @@ setup(name='xlutil_py',
       include_package_data=False,
       zip_safe=False,
       scripts=[],
-      ext_modules=[],
+      ext_modules=[MODULE1],
       description='utilid layer for xlattice_py',
       url='https://jddixon.github.io/xlutil_py',
       classifiers=[
-          'Development Status :: 2 - Pre-Alpha',
+          'Development Status :: 3 - Alpha',
           'Intended Audience :: Developers',
           'License :: OSI Approved :: MIT License',
           'Natural Language :: English',
