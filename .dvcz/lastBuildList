@@ -8,51 +8,72 @@ k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
 xlutil_py
-2017-12-21 22:59:53
+2018-02-15 20:37:24
 # BEGIN CONTENT #
 xlutil_py
  .cache
   v
    cache
-    lastfailed b759adbfd277a53671c84b3045202c7f62217caa
+    lastfailed ef3682e109d8f777028b19c94cf0afbbe81f5b5b
  .dvcz
-  builds c6a34789fb8fe134f84aaa58d26cc0cd13a96766
-  lastBuildList 91a57d5d295f132f301d5e9648127d1f4e95cfc7
+  builds f76b44038b4997c5d0a2c01807743b211cc89e0e
+  lastBuildList ad8d69f3eb610fae98752c2f4f77ec4d34dab4f2
   projCfg 0a760a1ce48066cbd0338c926e14f4774b1c920b
   projCfg.local c3059019a5ebe5fb771b14debabce04a4bad02ed
-  projConfig.toml 626b41382d9d7208f5f0be7e5b98022e21c21298
+  projConfig.toml 7697fea45813d97895186e87413481dae8cb8b6d
  .gitignore f588928d66e053d08e0c1d824b6874a244573090
  .gitignore.local 701e71ad917b19e7f6b7fd4bdc542180e9d977a7
- CHANGES 251ef9e86ef1b812b5e7cca5b50166e66ce4fd6e
+ CHANGES fd43280827a98f8466e926af1466c1a46ea26024
  LICENSE-MIT.md aec2b90058ed291d26eef53badc44802cda9bcde
  MANIFEST.in 4adf906b2cd5a5e68a3d78a36d9c643627646b7e
  README.md 57dc0ed5ae3749d1fbab20e20cb74131b779b892
  TODO 6714fb7114702b03a880a8793393a26e5ecb7dc1
  bkp2U 17abb2c0400ac7102d376ba25c03aa842ef04025
  checkCoverage 93d3554696ac0e9447b1f7d8198f20d0d5e4225f
- countem fb8724b7ba40b220b86024912baf83c59270d026
+ countem df059ccfaa47e8974401e84878512fbf5dbdefd7
  doPyLint 31321ad99eb3b9ac0928a68c29a8b5b88c9472fb
  fix_names cbc4e3e69383750f68fd3eb3bc5476a8ccd014b2
  ghpDoc
   index.md 77fdd612bb51ef5c0095da174bd13b55c8649f3f
  installit 4ef746aba52db046ed4b9931480c431b92f0419e
+ logs
+  foo.log 0d07c6d7b94cfd62752f2d1f5e1d5fd3c40df8cd
  name_pairs e3804b0915e4d67009a8a97d889738ef54a1a94a
  pylintrc dd234fda24a547a9071f1e4608a3c1f3b7de9aa0
  requirements.txt 5ebf96587bf55369ff74f922d3a6a960fa91897e
- setup.py ce993a506dbeb78e53811adb9a6d9979ee29a9b5
+ setup.py 042f4e5a975e01b92b4c22a79c62bc6040f49dfa
  src
+  extsrc
+   README c8403a804377a5daae614489ffb34894a2c3b9d8
+   cFTLogForPy.c 8b48da228b62b3b07c1676d1ee56cb948cac0f44
+   cFTLogForPy.h 41f407553a72b98cfd6758aefbf8b6f1028bc6f7
+   evLoop.c 2be9e4f715edba4586f76aa944d40564ca845f8c
+   logBufs.c 1ebd10c4a6efe8bf2225358d8451ec61460ffbf9
+   modFunc.c 10e4491d98f3ad73dd1474722efe74c3385c5f3a
+   threading.c cb0be12a7a1f8fe707092c3b68f5ce74211080bc
+   xxmodule.c.EXAMPLE f241af7b101b748f56455483a1de22995cdbb686
+   xxsubtype.c.EXAMPLE e48a68d2185910e9a4e5ab966c7e339ec490b833
   xlutil
-   __init__.py 24a821bd5e60604f9066771fccf62a4494c9df82
-   context.py bc9bacd371a3575db6dbea78e3d9171270e9a82e
+   __init__.py a76547eed5766c9c5686a1a54acce6f98f08ff99
+   context.py 4e96c6c010e804a371a00f97e7c400d4a00858a1
  styleit 5804a242d2bae3a03fbfd822da81123ec849e0cb
  test.all 894c1770125a92e44ebc9cec142b10cfadbe5798
  test_requirements.txt 34e713b2a2b69e650f6031c3eadaf83730267313
  tests
-  test_context.py 5e40dcf81e544caad67e1f41e61ca3c8d018e733
+  test_cft_log_for_py.py cdba9e0bd5174155f52ef141e3d57aff5e53e602
+  test_cft_log_obj.py e50e4503050262c97275a7ab8cbe5720a853951d
+  test_context.py 5f335a21d96758ab707d4611e365baefa4250079
+  test_decimal_version.py 8f60706e12b71ec5415b4c86a6446a58ffd0bd7b
+  test_get_exclusions.py 250877844b03b22920dcafbaad888e11acde3adf
+  test_lib_ev.py 0ed29c4fb063e7ce11849f6472bde67edbebec87
+  test_log_mgr.py 165c578701ac7b04aa2c369825fa7c673c5bf103
   test_namespace.py a97120faf856a59a29c5665938646a511c853347
   test_pop_count.py e00ce658dfe3d5657dc3e74d39dcb6a20dba932f
-  test_timestamp.py 844f39bbfafc75ab07cc5aa46de4baebe106e3c6
+  test_proc_lock.py acf3619639af016cb0714705db2e2fbc0fa02b3f
+  test_regexes_from_wildcards.py fb45607044b24da1ee3ef8c461e684856a7ee3ce
+  test_timestamp.py 6b269a4e07393380a8591354ce743a8ebb67a1d8
+  test_two_logs.py f13632c0029685ed9f886c0102b4b5b00864e799
  tox.ini 370b357ed76d280bfc6470c199b1f558cb070182
 # END CONTENT #
 
-XTX08Xg5KGrNG3jwcjhDAtspSaU5PePFLiUJnLiS7PnDZiL50BAhmIlceTSB730ncxJdrhkTqZlVZRopDdwgacAvuaT1wR3e2CsIZzH5l+0rmrwmCTbpb3vIRQTIyFNBh2j1wBxfy9j5eHmiL9rNm0PsceKttuYCI/Czk6p3CYAMo0NGGGwzeAWfLRrW/ZEB//tPJC46MBQMiPKMFlx5bdmRT5ErkBLbaZnwBWhMrkvu4edKnt4XSCo6HF/e2SWf7youyEZbFQIueUzxLlAXmwHVAPDLwidEikqOOSFP/0Wpa88LlI+ZHwrbVLiis/o3CpFq4al1DMgemFmMNkK/1Q==
+Vx0B2/t3qA0vFjKgFW70LKoHKlGptWAMXDuSsmthOsTP8CpzqY28LGgRrFhnwIcvFFYZ0C4NpeIz4/PC5cW9Kee7iTD1aFqdx9jXtbTPGx4vT8mDVAkl8zf/PJf3Y8ORFiIjG+X34dJJ8XdXMd/COAWtzlxOwkRadb4ZV1nmQV85D6oygzEWfYyfy9aiG3zWAGXOqw1QOdGyMeFKzwvo6/PkQd7LpESOEZ3Q8aubbYk9y4ndlsx94pCWoMQowkuy9XBCQSzqfoQ2tafEt1b7XcN7AqhATksgHZBWbZFD56mcAQ6wtan5clooKwOTOvN1tsgGWwORk6F+nYVkH7H6IQ==

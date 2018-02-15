@@ -1,0 +1,6 @@
+Compare /usr/local/src/Python-2.7.3/Modules/shamodule.c, remembering
+that it sets up a module called _sha: do note the initial underscore.
+
+sha3.AS_EXAMPLE is a not-quite-faithful rendition of shamodule.c.
+
+

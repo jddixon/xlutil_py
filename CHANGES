@@ -1,5 +1,8 @@
 py/xlutil_py/CHANGES
 
+v0.2.0
+    2018-02-15
+        * merged with code and tests from xlattice.util             SLOC 2554 
 v0.1.8
     2017-12-21
         * pylinting and minor bug fixes                             SLOC  870
@@ -37,6 +40,7 @@ v0.0.2
 v0.0.1
     2017-03-06
         * initial commit
+
 
 
 
