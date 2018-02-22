@@ -12,8 +12,8 @@ import time
 
 from .context import Context
 
-__version__ = '0.2.0'
-__version_date__ = '2018-02-15'
+__version__ = '0.2.1'
+__version_date__ = '2018-02-22'
 
 __all__ = ['__version__', '__version_date__',
            'get_utc_timestamp', 'mk_epoch_from_utc',

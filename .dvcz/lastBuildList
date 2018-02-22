@@ -8,22 +8,22 @@ k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
 xlutil_py
-2018-02-15 20:37:24
+2018-02-22 20:18:21
 # BEGIN CONTENT #
 xlutil_py
- .cache
-  v
-   cache
-    lastfailed ef3682e109d8f777028b19c94cf0afbbe81f5b5b
  .dvcz
-  builds f76b44038b4997c5d0a2c01807743b211cc89e0e
-  lastBuildList ad8d69f3eb610fae98752c2f4f77ec4d34dab4f2
+  builds 32e9d46cba81cea900711e6a784b121b94245bf5
+  lastBuildList 112bfe7153a14633d46d60041cb56028d628ca67
   projCfg 0a760a1ce48066cbd0338c926e14f4774b1c920b
   projCfg.local c3059019a5ebe5fb771b14debabce04a4bad02ed
-  projConfig.toml 7697fea45813d97895186e87413481dae8cb8b6d
+  projConfig.toml 4faa34df04409e1952d88ed89b568b6ac25a5c48
  .gitignore f588928d66e053d08e0c1d824b6874a244573090
  .gitignore.local 701e71ad917b19e7f6b7fd4bdc542180e9d977a7
- CHANGES fd43280827a98f8466e926af1466c1a46ea26024
+ .pytest_cache
+  v
+   cache
+    lastfailed bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f
+ CHANGES 783687a2c73af6cc997e88bd70b99d5ddc381a85
  LICENSE-MIT.md aec2b90058ed291d26eef53badc44802cda9bcde
  MANIFEST.in 4adf906b2cd5a5e68a3d78a36d9c643627646b7e
  README.md 57dc0ed5ae3749d1fbab20e20cb74131b779b892
@@ -37,11 +37,11 @@ xlutil_py
   index.md 77fdd612bb51ef5c0095da174bd13b55c8649f3f
  installit 4ef746aba52db046ed4b9931480c431b92f0419e
  logs
-  foo.log 0d07c6d7b94cfd62752f2d1f5e1d5fd3c40df8cd
+  foo.log 8098c184ae81c1ba04b6c1b395d9a8ff879d1402
  name_pairs e3804b0915e4d67009a8a97d889738ef54a1a94a
  pylintrc dd234fda24a547a9071f1e4608a3c1f3b7de9aa0
  requirements.txt 5ebf96587bf55369ff74f922d3a6a960fa91897e
- setup.py 042f4e5a975e01b92b4c22a79c62bc6040f49dfa
+ setup.py c33693c08ad41e0f78ac8c5b47f69bb0e210ae30
  src
   extsrc
    README c8403a804377a5daae614489ffb34894a2c3b9d8
@@ -54,10 +54,11 @@ xlutil_py
    xxmodule.c.EXAMPLE f241af7b101b748f56455483a1de22995cdbb686
    xxsubtype.c.EXAMPLE e48a68d2185910e9a4e5ab966c7e339ec490b833
   xlutil
-   __init__.py a76547eed5766c9c5686a1a54acce6f98f08ff99
+   __init__.py e688171ecf9f1db641a04a3400a1f8e14b6d7c56
    context.py 4e96c6c010e804a371a00f97e7c400d4a00858a1
+   ftlog.py b6052ed9e1c8f2725c81ca81a23bee3344e57cd6
  styleit 5804a242d2bae3a03fbfd822da81123ec849e0cb
- test.all 894c1770125a92e44ebc9cec142b10cfadbe5798
+ test.all ad891709640efbb400bd32f92799ba4396f6d552
  test_requirements.txt 34e713b2a2b69e650f6031c3eadaf83730267313
  tests
   test_cft_log_for_py.py cdba9e0bd5174155f52ef141e3d57aff5e53e602
@@ -76,4 +77,4 @@ xlutil_py
  tox.ini 370b357ed76d280bfc6470c199b1f558cb070182
 # END CONTENT #
 
-Vx0B2/t3qA0vFjKgFW70LKoHKlGptWAMXDuSsmthOsTP8CpzqY28LGgRrFhnwIcvFFYZ0C4NpeIz4/PC5cW9Kee7iTD1aFqdx9jXtbTPGx4vT8mDVAkl8zf/PJf3Y8ORFiIjG+X34dJJ8XdXMd/COAWtzlxOwkRadb4ZV1nmQV85D6oygzEWfYyfy9aiG3zWAGXOqw1QOdGyMeFKzwvo6/PkQd7LpESOEZ3Q8aubbYk9y4ndlsx94pCWoMQowkuy9XBCQSzqfoQ2tafEt1b7XcN7AqhATksgHZBWbZFD56mcAQ6wtan5clooKwOTOvN1tsgGWwORk6F+nYVkH7H6IQ==
+aJAYkWZvZ4nOVL/VkRDyhYHgZLA1PIHEc8GOjdeed+cXb9QfeTzvPtxWt5yQjekiDFROXUSGxTU2vJ9a5HbM5lahzusAZWtsmoBgJrnQ6HeOxTF56ndkHgxM34PA2WCVMZpJlQsjZoOE+fulBsFX6pXFEoXV6SOmrkpzxoRIr0TqhEkkeELTlt1iE0fQ0HFDqU1SMpIBUCCZnwMA7ReUR381J2OFL2reCK8KE1eMuPWLV9hDTXNtt9Ufd6mrsvsVsa/Hx39mHiPMI61h6JA5VNBnJFLmB0gkMvODXPaIX6/IiOk4EYOFe4rb4NdlBAyytJ7ojlkacrFnUDrU46O5tw==
