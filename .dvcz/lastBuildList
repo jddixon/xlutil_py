@@ -8,22 +8,22 @@ k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
 xlutil_py
-2018-02-22 20:18:21
+2018-02-26 20:21:47
 # BEGIN CONTENT #
 xlutil_py
  .dvcz
-  builds 32e9d46cba81cea900711e6a784b121b94245bf5
-  lastBuildList 112bfe7153a14633d46d60041cb56028d628ca67
+  builds 0260930920d38bc4c035b5c12a93d837b0563287
+  lastBuildList d85bc872688de8b8d18a653ac09a485140408e31
   projCfg 0a760a1ce48066cbd0338c926e14f4774b1c920b
   projCfg.local c3059019a5ebe5fb771b14debabce04a4bad02ed
-  projConfig.toml 4faa34df04409e1952d88ed89b568b6ac25a5c48
+  projConfig.toml 8ef52d0a78ea7c29c1f7ada57842db4a1b6ba808
  .gitignore f588928d66e053d08e0c1d824b6874a244573090
  .gitignore.local 701e71ad917b19e7f6b7fd4bdc542180e9d977a7
  .pytest_cache
   v
    cache
     lastfailed bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f
- CHANGES 783687a2c73af6cc997e88bd70b99d5ddc381a85
+ CHANGES f7575e0b5ef11e151e3731f6ec077e3463435b95
  LICENSE-MIT.md aec2b90058ed291d26eef53badc44802cda9bcde
  MANIFEST.in 4adf906b2cd5a5e68a3d78a36d9c643627646b7e
  README.md 57dc0ed5ae3749d1fbab20e20cb74131b779b892
@@ -37,11 +37,11 @@ xlutil_py
   index.md 77fdd612bb51ef5c0095da174bd13b55c8649f3f
  installit 4ef746aba52db046ed4b9931480c431b92f0419e
  logs
-  foo.log 8098c184ae81c1ba04b6c1b395d9a8ff879d1402
+  foo.log af6a021d1f2df5d8bccf34ed180e5bd38a2095fc
  name_pairs e3804b0915e4d67009a8a97d889738ef54a1a94a
  pylintrc dd234fda24a547a9071f1e4608a3c1f3b7de9aa0
- requirements.txt 5ebf96587bf55369ff74f922d3a6a960fa91897e
- setup.py c33693c08ad41e0f78ac8c5b47f69bb0e210ae30
+ requirements.txt b8738e0d22bd0598dc2c080123396f5a850ce5e7
+ setup.py 89f1afe508dce3400b8db64a1bb955a24cf10fe0
  src
   extsrc
    README c8403a804377a5daae614489ffb34894a2c3b9d8
@@ -54,7 +54,7 @@ xlutil_py
    xxmodule.c.EXAMPLE f241af7b101b748f56455483a1de22995cdbb686
    xxsubtype.c.EXAMPLE e48a68d2185910e9a4e5ab966c7e339ec490b833
   xlutil
-   __init__.py e688171ecf9f1db641a04a3400a1f8e14b6d7c56
+   __init__.py 22d0ba8dff354a3168f2ee663f576e499bf6be3e
    context.py 4e96c6c010e804a371a00f97e7c400d4a00858a1
    ftlog.py b6052ed9e1c8f2725c81ca81a23bee3344e57cd6
  styleit 5804a242d2bae3a03fbfd822da81123ec849e0cb
@@ -67,14 +67,14 @@ xlutil_py
   test_decimal_version.py 8f60706e12b71ec5415b4c86a6446a58ffd0bd7b
   test_get_exclusions.py 250877844b03b22920dcafbaad888e11acde3adf
   test_lib_ev.py 0ed29c4fb063e7ce11849f6472bde67edbebec87
-  test_log_mgr.py 165c578701ac7b04aa2c369825fa7c673c5bf103
+  test_log_mgr.py e6309b6e6f5f6a6006781311ea292fd979b55f53
   test_namespace.py a97120faf856a59a29c5665938646a511c853347
   test_pop_count.py e00ce658dfe3d5657dc3e74d39dcb6a20dba932f
   test_proc_lock.py acf3619639af016cb0714705db2e2fbc0fa02b3f
   test_regexes_from_wildcards.py fb45607044b24da1ee3ef8c461e684856a7ee3ce
   test_timestamp.py 6b269a4e07393380a8591354ce743a8ebb67a1d8
-  test_two_logs.py f13632c0029685ed9f886c0102b4b5b00864e799
- tox.ini 370b357ed76d280bfc6470c199b1f558cb070182
+  test_two_logs.py 22ba05d02216f9a9f436b6423001c61122bf8883
+ tox.ini e53d3de7dde473934a135c7f8cc2c06c98b2363f
 # END CONTENT #
 
-aJAYkWZvZ4nOVL/VkRDyhYHgZLA1PIHEc8GOjdeed+cXb9QfeTzvPtxWt5yQjekiDFROXUSGxTU2vJ9a5HbM5lahzusAZWtsmoBgJrnQ6HeOxTF56ndkHgxM34PA2WCVMZpJlQsjZoOE+fulBsFX6pXFEoXV6SOmrkpzxoRIr0TqhEkkeELTlt1iE0fQ0HFDqU1SMpIBUCCZnwMA7ReUR381J2OFL2reCK8KE1eMuPWLV9hDTXNtt9Ufd6mrsvsVsa/Hx39mHiPMI61h6JA5VNBnJFLmB0gkMvODXPaIX6/IiOk4EYOFe4rb4NdlBAyytJ7ojlkacrFnUDrU46O5tw==
+MGxswour4AFekS13WnRFz5Ln9XClWSBEzKppKHaitS/mcMuezD/17SzveTr7JelQ7xS5Kf+Pp+lrLElsQ0EUvjoDGuX57xuDkV7Ioyh83NpFZcyPMiH4SFirtVtZ5zSjcLvKqcJ2LTeRWCUEAdvcIhrcOFKG/kA8roNug4jmXMekEfc1IkRF4C+r5ePrRaffAZhaugBkUiBWS2oAeB+NXcqKiXd3FYUF01NCWtP9NvH+neemvkCcs1fMvYZ7atVwNEJL/MAOheuDEYl6Of9cUFFQlWNXupmA5XDtQGAK9BXWBLZR0QcbITyXRHISALFv4KQxAAruK5M/2PEChIp8oQ==

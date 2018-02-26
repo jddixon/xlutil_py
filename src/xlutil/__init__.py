@@ -10,10 +10,10 @@ import os
 import re
 import time
 
-from .context import Context
+from xlutil.context import Context
 
-__version__ = '0.2.1'
-__version_date__ = '2018-02-22'
+__version__ = '0.2.2'
+__version_date__ = '2018-02-26'
 
 __all__ = ['__version__', '__version_date__',
            'get_utc_timestamp', 'mk_epoch_from_utc',
