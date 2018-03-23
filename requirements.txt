@@ -1,2 +1,3 @@
 # xlutil_py/requirements.txt
-cFTLogForPy
+# cFTLogForPy
+setuptools

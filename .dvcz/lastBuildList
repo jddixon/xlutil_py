@@ -8,18 +8,18 @@ k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
 xlutil_py v0.2.3
-2018-03-23 22:38:54
+2018-03-23 23:32:41
 # BEGIN CONTENT #
 xlutil_py
  .dvcz
-  builds 64c95ee3a9a315fc4834f5d520e7007d217b8c8c
-  lastBuildList 9392830ecc5c2f2ad3ab3696359074209b9990fd
+  builds c4993c96cbd5ebfba4b0dce0780d2f955a837775
+  lastBuildList 9014af1c594abf05f39b79773d40f39d861c8f9f
   projCfg 0a760a1ce48066cbd0338c926e14f4774b1c920b
   projCfg.local c3059019a5ebe5fb771b14debabce04a4bad02ed
   projConfig.toml 88dee14b5440a0a727907a68de119c6c2e9c794e
  .gitignore f588928d66e053d08e0c1d824b6874a244573090
  .gitignore.local 701e71ad917b19e7f6b7fd4bdc542180e9d977a7
- CHANGES 0087bfddd1e9488316e80f63239fb238604b08d6
+ CHANGES d6c68a6d3926ce49752070082cd0dc0c3088359a
  LICENSE-MIT.md aec2b90058ed291d26eef53badc44802cda9bcde
  MANIFEST.in 4adf906b2cd5a5e68a3d78a36d9c643627646b7e
  README.md 57dc0ed5ae3749d1fbab20e20cb74131b779b892
@@ -33,10 +33,10 @@ xlutil_py
   index.md 77fdd612bb51ef5c0095da174bd13b55c8649f3f
  installit 4ef746aba52db046ed4b9931480c431b92f0419e
  logs
-  foo.log af6a021d1f2df5d8bccf34ed180e5bd38a2095fc
+  foo.log 99086d59faac507d574ff8095a536d7994d10de4
  name_pairs e3804b0915e4d67009a8a97d889738ef54a1a94a
  pylintrc dd234fda24a547a9071f1e4608a3c1f3b7de9aa0
- requirements.txt b8738e0d22bd0598dc2c080123396f5a850ce5e7
+ requirements.txt 2dcc337de7d58e3a4c9906a43f28739b0d5d8817
  setup.py f7b35fe9a17e7eec552f4a5dc19ceb3e2964a44f
  src
   extsrc
@@ -55,7 +55,7 @@ xlutil_py
    ftlog.py b6052ed9e1c8f2725c81ca81a23bee3344e57cd6
  styleit 5804a242d2bae3a03fbfd822da81123ec849e0cb
  test.all ad891709640efbb400bd32f92799ba4396f6d552
- test_requirements.txt 09479c3270f025aa6fd13609f2aeb7e57061602d
+ test_requirements.txt eb30cfaff6a0521fb61debfd0b15e36f8c95b50b
  tests
   test_cft_log_for_py.py cdba9e0bd5174155f52ef141e3d57aff5e53e602
   test_cft_log_obj.py e50e4503050262c97275a7ab8cbe5720a853951d
@@ -73,4 +73,4 @@ xlutil_py
  tox.ini 2a7635f9549e5e195c510f555d93badf440ffe8b
 # END CONTENT #
 
-CIr8hOqnnhftuUItXG2lML3M+0iuUKht0H76iJT0EyEzZGi7VaOu2PC5F0yQpYBr2h0U5qENCPNqIu4yK8bQVWMJ7Ra6Eoi19UzlLztxxtY6PDTcXlpAqtg1nseXL+qfVLuyytmz3rrvFI4p1oeZU5JoUVI3ci0vKy2qkY5bGKTLltbZEpnCCaszbHHCpbgRHdbrtM/vqID/kLnDONdF7zIEOqAPOxHlkaJ1G7Zd04IMKsgAWD4Nl6NfTGSyBW9ngqcqGDFX2EyxcqF+Sxq3+stFcHqAuFbDWUi8n7Zb3pLvYaVtLfk8fTlIpGMOxU4dpSqwiefniikI5e8RuORopQ==
+HCSs9Oe7z3NNK7Kop0Es42+X297NcNbVpLnEX2HeXFeLWL6Zk6r27ufRg1P74yymcrWl4nTZA1yOrwsDSZNx3T/lx5N6rOXVg4xAK15zSWfJPnDb1kqYdH2qDnIiyVOgmOt76ioyj/nuVvI4cjDCOawW8kdEUUQV2kQD+SEtKiX/xIJIYj8UYNH2gFssH6myMfvEwnMI5M+jnVlHX+XYEehASsHHp1d7ODbX2m35PJMR5VGXi+zY0gKwRfqmZPEj3HlmVUa/v14/w/NoTZHF9zEGEAWjeb7295L4bdkc2qNAIjktiGq/bnijOu8IqMM1LZunmlbIUu0nE9BKE2JSmQ==
