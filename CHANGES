@@ -2,7 +2,7 @@ py/xlutil_py/CHANGES
 
 v0.2.3
     2018-03-23
-        *
+        * fix corrupt .dvcz/builds                                  SLOC 2693
 v0.2.2
     2018-02-26
         * fix setup.py, tox config files                            SLOC 2700
