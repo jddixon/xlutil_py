@@ -7,23 +7,19 @@ Giaje1YAJPNVBt3dlOA5lhBp4GpSYBskJ9UR2Zyt3lgAGK3dEwxYETLMh9VWEV8i
 k2lyCIE/V/CDb9eVDYQgYSJYrnQ/JAPST7NbcY8aI+/0l7QVBhLBpmOCvmS6ofvz
 /QIDAQAB
 -----END PUBLIC KEY-----
-xlutil_py
-2018-02-26 20:21:47
+xlutil_py v0.2.3
+2018-03-23 22:38:54
 # BEGIN CONTENT #
 xlutil_py
  .dvcz
-  builds 0260930920d38bc4c035b5c12a93d837b0563287
-  lastBuildList d85bc872688de8b8d18a653ac09a485140408e31
+  builds 64c95ee3a9a315fc4834f5d520e7007d217b8c8c
+  lastBuildList 9392830ecc5c2f2ad3ab3696359074209b9990fd
   projCfg 0a760a1ce48066cbd0338c926e14f4774b1c920b
   projCfg.local c3059019a5ebe5fb771b14debabce04a4bad02ed
-  projConfig.toml 8ef52d0a78ea7c29c1f7ada57842db4a1b6ba808
+  projConfig.toml 88dee14b5440a0a727907a68de119c6c2e9c794e
  .gitignore f588928d66e053d08e0c1d824b6874a244573090
  .gitignore.local 701e71ad917b19e7f6b7fd4bdc542180e9d977a7
- .pytest_cache
-  v
-   cache
-    lastfailed bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f
- CHANGES f7575e0b5ef11e151e3731f6ec077e3463435b95
+ CHANGES 0087bfddd1e9488316e80f63239fb238604b08d6
  LICENSE-MIT.md aec2b90058ed291d26eef53badc44802cda9bcde
  MANIFEST.in 4adf906b2cd5a5e68a3d78a36d9c643627646b7e
  README.md 57dc0ed5ae3749d1fbab20e20cb74131b779b892
@@ -41,7 +37,7 @@ xlutil_py
  name_pairs e3804b0915e4d67009a8a97d889738ef54a1a94a
  pylintrc dd234fda24a547a9071f1e4608a3c1f3b7de9aa0
  requirements.txt b8738e0d22bd0598dc2c080123396f5a850ce5e7
- setup.py 89f1afe508dce3400b8db64a1bb955a24cf10fe0
+ setup.py f7b35fe9a17e7eec552f4a5dc19ceb3e2964a44f
  src
   extsrc
    README c8403a804377a5daae614489ffb34894a2c3b9d8
@@ -54,12 +50,12 @@ xlutil_py
    xxmodule.c.EXAMPLE f241af7b101b748f56455483a1de22995cdbb686
    xxsubtype.c.EXAMPLE e48a68d2185910e9a4e5ab966c7e339ec490b833
   xlutil
-   __init__.py 22d0ba8dff354a3168f2ee663f576e499bf6be3e
+   __init__.py 6ead8486f130556e7d6a92b2c3746ac3b9712784
    context.py 4e96c6c010e804a371a00f97e7c400d4a00858a1
    ftlog.py b6052ed9e1c8f2725c81ca81a23bee3344e57cd6
  styleit 5804a242d2bae3a03fbfd822da81123ec849e0cb
  test.all ad891709640efbb400bd32f92799ba4396f6d552
- test_requirements.txt 34e713b2a2b69e650f6031c3eadaf83730267313
+ test_requirements.txt 09479c3270f025aa6fd13609f2aeb7e57061602d
  tests
   test_cft_log_for_py.py cdba9e0bd5174155f52ef141e3d57aff5e53e602
   test_cft_log_obj.py e50e4503050262c97275a7ab8cbe5720a853951d
@@ -74,7 +70,7 @@ xlutil_py
   test_regexes_from_wildcards.py fb45607044b24da1ee3ef8c461e684856a7ee3ce
   test_timestamp.py 6b269a4e07393380a8591354ce743a8ebb67a1d8
   test_two_logs.py 22ba05d02216f9a9f436b6423001c61122bf8883
- tox.ini e53d3de7dde473934a135c7f8cc2c06c98b2363f
+ tox.ini 2a7635f9549e5e195c510f555d93badf440ffe8b
 # END CONTENT #
 
-MGxswour4AFekS13WnRFz5Ln9XClWSBEzKppKHaitS/mcMuezD/17SzveTr7JelQ7xS5Kf+Pp+lrLElsQ0EUvjoDGuX57xuDkV7Ioyh83NpFZcyPMiH4SFirtVtZ5zSjcLvKqcJ2LTeRWCUEAdvcIhrcOFKG/kA8roNug4jmXMekEfc1IkRF4C+r5ePrRaffAZhaugBkUiBWS2oAeB+NXcqKiXd3FYUF01NCWtP9NvH+neemvkCcs1fMvYZ7atVwNEJL/MAOheuDEYl6Of9cUFFQlWNXupmA5XDtQGAK9BXWBLZR0QcbITyXRHISALFv4KQxAAruK5M/2PEChIp8oQ==
+CIr8hOqnnhftuUItXG2lML3M+0iuUKht0H76iJT0EyEzZGi7VaOu2PC5F0yQpYBr2h0U5qENCPNqIu4yK8bQVWMJ7Ra6Eoi19UzlLztxxtY6PDTcXlpAqtg1nseXL+qfVLuyytmz3rrvFI4p1oeZU5JoUVI3ci0vKy2qkY5bGKTLltbZEpnCCaszbHHCpbgRHdbrtM/vqID/kLnDONdF7zIEOqAPOxHlkaJ1G7Zd04IMKsgAWD4Nl6NfTGSyBW9ngqcqGDFX2EyxcqF+Sxq3+stFcHqAuFbDWUi8n7Zb3pLvYaVtLfk8fTlIpGMOxU4dpSqwiefniikI5e8RuORopQ==
